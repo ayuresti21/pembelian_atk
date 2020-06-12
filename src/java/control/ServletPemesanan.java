@@ -50,7 +50,7 @@ public class ServletPemesanan extends pesan {
             pemesanan.setTglpesan(request.getParameter("tanggal"));
             pemesanan.setKdsupplier(request.getParameter("supplier"));
             pemesanan.setTotal(request.getParameter("tobay"));
-            pstmt=kon.conn.prepareStatement("INSERT detail_pesan SELECT '"+pemesanan.getNopesan()+"','"
+            pstmt=kon.conn.prepareStatement("INSERT detail_pesan SELECT '"+pemesanan.getNopesan()+"',"
             + "kode,quantity,subtotal FROM sementara");
             result=pstmt.executeUpdate();
             pstmt1 = kon.conn.prepareStatement("INSERT INTO pemesanan values('" + pemesanan.getNopesan() + "','"
