@@ -11,12 +11,12 @@
 pembelian pembelian = new pembelian();
 koneksi kon = new koneksi();
 ResultSet rs = null;
-String beli_id = request.getParameter("beli_id").toString();
+String bel_id = request.getParameter("bel_id").toString();
 String data = null;
 Statement st;
-rs = kon.stmt.executeQuery("SELECT * from detail_beli where no_beli='" + beli_id + "' ");
+rs = kon.stmt.executeQuery("SELECT * from detail_beli where no_beli='" + bel_id + "' ");
 while (rs.next()) {
-    data = ":" + rs.getString(4) + ":" + beli_id;
+    data = ":" + rs.getString(4) + ":" + bel_id;
 }
 out.println(data);
 %>

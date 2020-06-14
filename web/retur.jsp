@@ -18,17 +18,17 @@ ResultSet qrybarang = null;
 %>
 <html>
     <head>
-    <tittle>Transaksi Retur</tittle>
+    <title>Transaksi Retur</title>
     </head>
     <body>
         <sql:query var="ttl" dataSource="${dataSource}">
             SELECT SUM(quantity) AS ttl_D,
             SUM(subtotal) AS ttl_K FROM sementara_retur
         </sql:query>
-                    <h2>Transaksi Retur</h2>
-                    <table border="0">
-                    <form action="ServletRetur" method="post" onsubmit="return validasi_inputRetur(this)">
-                    <pre>
+    <h2>Transaksi Retur</h2>
+    <table border="0">
+    <form action="ServletRetur" method="post" onsubmit="return validasi_inputRetur(this)">
+    <pre>
 <tr>
 <td>No Retur</td>  <td><%
         try {
@@ -43,6 +43,7 @@ ResultSet qrybarang = null;
         int autonort = noretur.getInt(1) + 1;
         String nomorrt = String.valueOf(autonort);
         int noLong = nomorrt.length();
+        
         for (int a = 1; a < 7 - noLong; a++) {
         nomorrt = "0" + nomorrt;
         }
@@ -50,7 +51,7 @@ ResultSet qrybarang = null;
         out.println("<input type='text' class='form-control' id='noret' readonly value='" + nomerrt + "' name='no_retur'>");
         }
                                   
-            }
+      }
             } catch (Exception e) {
               out.println(e);
             }
@@ -119,7 +120,7 @@ ResultSet qrybarang = null;
                         + "<td>" + rs.getString(2) + "</td>"
                         + "<td>" + rs.getString(3) + "</td>"
                         + "<td>" + rs.getString(4) + "</td>"
-                        + "<td><a href=ServletRetur?aksi2=HAPUS&kode=" + rs.getString(2) + ">Hapus</a></td>"
+                        + "<td><a href=ServletRetur?aksi2=HAPUS&no_retur=" + rs.getString(1) + ">Hapus</a></td>"
                         + "</tr>");
                         }
                   %>
