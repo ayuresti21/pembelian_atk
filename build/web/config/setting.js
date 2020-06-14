@@ -216,15 +216,20 @@ function GetXmlHttpObject()
     }
     return xmlHttp;
 }
-function sumvalidasi_inputRetur(form) {
-    var txtFirstNumberValue = document.getElementById('ename').value;
-    var txtSecondNumberValue = document.getElementById('jml').value;
-    var result = parseFloat(txtFirstNumberValue) * parseFloat(txtSecondNumberValue);
-    if (!isNaN(result)) {
-        document.getElementById('subtotal').value = result;
-    }
+
+function sumvalidasi_inputRetur() {
+        var txtFirstNumberValue = document.getElementById('ename').value;
+        var txtSecondNumberValue = document.getElementById('jml').value;
+        var result = parseFloat(txtFirstNumberValue) * parseFloat(txtSecondNumberValue);
+        if (!isNaN(result)) {
+            document.getElementById('subtotal').value = result;
+        }
 }
 
+function validasi_inputJurnal(form)
+{
+document.getElementById("nojurnal").value = document.getElementById("nojur").value;   
+}
 
 function Hitung(){
 kre1 = document.getElementById("kredit1").value;
