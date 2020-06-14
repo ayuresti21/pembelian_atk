@@ -16,8 +16,8 @@
             int jumlah = Integer.parseInt(request.getParameter("jumlah"));
             File reportFile = new File(application.getRealPath("laporan/laporan_barang.jasper"));
             Map param = new HashMap();
-            param.put("pstok, jumlah");
-            byte[] bytes - JasperRunManager.runReportToPdf(reportFile.getPath(), param, kon.stmt.getConnection());
+            param.put("pstok", jumlah);
+            byte[] bytes = JasperRunManager.runReportToPdf(reportFile.getPath(), param, kon.stmt.getConnection());
             response.setContentType("application/pdf");
             response.setContentLength(bytes.length);
             

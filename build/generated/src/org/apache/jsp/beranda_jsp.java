@@ -47,7 +47,7 @@ public final class beranda_jsp extends org.apache.jasper.runtime.HttpJspBase
   private static java.util.List<String> _jspx_dependants;
 
   static {
-    _jspx_dependants = new java.util.ArrayList<String>(10);
+    _jspx_dependants = new java.util.ArrayList<String>(11);
     _jspx_dependants.add("/home.jsp");
     _jspx_dependants.add("/barang.jsp");
     _jspx_dependants.add("/supplier.jsp");
@@ -58,6 +58,7 @@ public final class beranda_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_dependants.add("/pembelian.jsp");
     _jspx_dependants.add("/jurnal.jsp");
     _jspx_dependants.add("/retur.jsp");
+    _jspx_dependants.add("/CetakLaporanBarang.jsp");
   }
 
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_forEach_var_items;
@@ -115,44 +116,45 @@ public final class beranda_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
       if (_jspx_meth_sql_setDataSource_0(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("\n");
-      out.write("<head>\n");
-      out.write("    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n");
-      out.write("    <title>Aplikasi Pembelian</title>\n");
-      out.write("    <link href=\"config/design.css\" rel=\"stylesheet\" type=\"text/css\" />\n");
-      out.write("    <script type=\"text/javascript\" src=\"config/setting.js\"></script>\n");
-      out.write("</head>\n");
-      out.write("<body>\n");
-      out.write("    <!--\n");
-      out.write("    This is a free CSS template provided by templatemo.com\n");
-      out.write("    -->\n");
-      out.write("    <div id=\"container_wrapper\">\n");
-      out.write("        <div class=\"spacer\"></div>\n");
-      out.write("        <div id=\"container\">\n");
-      out.write("            <div id=\"top\">  \n");
-      out.write("                <a href=\"beranda.jsp?halaman=dataPeg\">Change Password</a> || \n");
-      out.write("                <a href=\"beranda.jsp?halaman=logout\">Logout</a>\n");
-      out.write("            </div>\n");
-      out.write("            <div id=\"header\">\n");
-      out.write("                <div id=\"inner_header\">\n");
-      out.write("                    <div id=\"site_title\">Aplikasi Pembelian</div>\n");
-      out.write("                    <div id=\"site_slogan\">\n");
-      out.write("                        <marquee behavior=\"alternate\">Program Studi Sistem Informasi Akuntansi</marquee>\n");
-      out.write("                    </div>\n");
-      out.write("                </div>\n");
-      out.write("            </div>\n");
-      out.write("            \n");
-      out.write("               \n");
-      out.write("            <div id=\"left_column\">\n");
-      out.write("                <div class=\"text_area\" align=\"justify\">\n");
-      out.write("                    \n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<head>\r\n");
+      out.write("    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n");
+      out.write("    <title>Aplikasi Pembelian</title>\r\n");
+      out.write("    <link href=\"config/design.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n");
+      out.write("    <script type=\"text/javascript\" src=\"config/setting.js\"></script>\r\n");
+      out.write("    <link href=\"config/cssTable.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n");
+      out.write("</head>\r\n");
+      out.write("<body>\r\n");
+      out.write("    <!--\r\n");
+      out.write("    This is a free CSS template provided by templatemo.com\r\n");
+      out.write("    -->\r\n");
+      out.write("    <div id=\"container_wrapper\">\r\n");
+      out.write("        <div class=\"spacer\"></div>\r\n");
+      out.write("        <div id=\"container\">\r\n");
+      out.write("            <div id=\"top\">  \r\n");
+      out.write("                <a href=\"beranda.jsp?halaman=dataPeg\">Change Password</a> || \r\n");
+      out.write("                <a href=\"beranda.jsp?halaman=logout\">Logout</a>\r\n");
+      out.write("            </div>\r\n");
+      out.write("            <div id=\"header\">\r\n");
+      out.write("                <div id=\"inner_header\">\r\n");
+      out.write("                    <div id=\"site_title\">Aplikasi Pembelian</div>\r\n");
+      out.write("                    <div id=\"site_slogan\">\r\n");
+      out.write("                        <marquee behavior=\"alternate\">Program Studi Sistem Informasi Akuntansi</marquee>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("            \r\n");
+      out.write("               \r\n");
+      out.write("            <div id=\"left_column\">\r\n");
+      out.write("                <div class=\"text_area\" align=\"justify\">\r\n");
+      out.write("                    \r\n");
       out.write("                    ");
       //  c:choose
       org.apache.taglibs.standard.tag.common.core.ChooseTag _jspx_th_c_choose_0 = (org.apache.taglibs.standard.tag.common.core.ChooseTag) _jspx_tagPool_c_choose.get(org.apache.taglibs.standard.tag.common.core.ChooseTag.class);
@@ -161,27 +163,27 @@ public final class beranda_jsp extends org.apache.jasper.runtime.HttpJspBase
       int _jspx_eval_c_choose_0 = _jspx_th_c_choose_0.doStartTag();
       if (_jspx_eval_c_choose_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
+          out.write("\r\n");
           out.write("                        ");
           if (_jspx_meth_c_when_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_choose_0, _jspx_page_context))
             return;
-          out.write("\n");
+          out.write("\r\n");
           out.write("                        ");
           if (_jspx_meth_c_when_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_choose_0, _jspx_page_context))
             return;
-          out.write("\n");
+          out.write("\r\n");
           out.write("                        ");
           if (_jspx_meth_c_when_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_choose_0, _jspx_page_context))
             return;
-          out.write("\n");
+          out.write("\r\n");
           out.write("                        ");
           if (_jspx_meth_c_when_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_choose_0, _jspx_page_context))
             return;
-          out.write("\n");
+          out.write("\r\n");
           out.write("                          ");
           if (_jspx_meth_c_when_4((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_choose_0, _jspx_page_context))
             return;
-          out.write("\n");
+          out.write("\r\n");
           out.write("                         ");
           //  c:when
           org.apache.taglibs.standard.tag.rt.core.WhenTag _jspx_th_c_when_5 = (org.apache.taglibs.standard.tag.rt.core.WhenTag) _jspx_tagPool_c_when_test.get(org.apache.taglibs.standard.tag.rt.core.WhenTag.class);
@@ -191,13 +193,12 @@ public final class beranda_jsp extends org.apache.jasper.runtime.HttpJspBase
           int _jspx_eval_c_when_5 = _jspx_th_c_when_5.doStartTag();
           if (_jspx_eval_c_when_5 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
             do {
-              out.write("\n");
+              out.write("\r\n");
               out.write("                            ");
-              out.write("\n");
-              out.write("\n");
-              out.write("\n");
-              out.write("\n");
-              out.write("\n");
+              out.write("\r\n");
+              out.write("\r\n");
+              out.write("\r\n");
+              out.write("\r\n");
               out.write('\n');
               out.write('\n');
 
@@ -227,8 +228,8 @@ public final class beranda_jsp extends org.apache.jasper.runtime.HttpJspBase
     }
 
               out.write("   ");
-              out.write('\n');
-              out.write('\n');
+              out.write("\r\n");
+              out.write("\r\n");
  java.util.Date waktu = new java.util.Date();
 int tanggal = waktu.getDate();
 int tahun = waktu.getYear() + 1900;
@@ -242,33 +243,33 @@ ResultSet rs = null;
 ResultSet qrybarang = null;
 ResultSet qrypemesanan = null;
 
-              out.write("\n");
-              out.write("<html>\n");
-              out.write("    <head>\n");
-              out.write("    <tittle>Transaksi Pemesanan</tittle>\n");
-              out.write("    </head>\n");
-              out.write("    <body>\n");
+              out.write("\r\n");
+              out.write("<html>\r\n");
+              out.write("    <head>\r\n");
+              out.write("    <tittle>Transaksi Pemesanan</tittle>\r\n");
+              out.write("    </head>\r\n");
+              out.write("    <body>\r\n");
               out.write("        ");
               if (_jspx_meth_sql_query_4((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_when_5, _jspx_page_context))
                 return;
-              out.write("\n");
-              out.write("            <h1>Transaksi Pemesanan Barang</h1></br>\n");
-              out.write("            <table border=\"0\">\n");
-              out.write("                <form action=\"ServletPemesanan\" method=\"post\">\n");
-              out.write("                    <h2>Data Barang</h2>\n");
-              out.write("                    <tr>\n");
-              out.write("                        <td>No Pesan</td>     <td>: <input type=\"text\" name=\"no_pesan\" id=\"nopesan\" value=\"\"\n");
-              out.write("                        readonly=\"readonly\"/>\n");
-              out.write("                        <input type=\"button\" onclick=\"pesan();\" value=\"Add No Pesan\" class=\"button\"></td>\n");
-              out.write("                    </tr>\n");
-              out.write("                    <tr>\n");
+              out.write("\r\n");
+              out.write("            <h1>Transaksi Pemesanan Barang</h1></br>\r\n");
+              out.write("            <table border=\"0\">\r\n");
+              out.write("                <form action=\"ServletPemesanan\" method=\"post\">\r\n");
+              out.write("                    <h2>Data Barang</h2>\r\n");
+              out.write("                    <tr>\r\n");
+              out.write("                        <td>No Pesan</td>     <td>: <input type=\"text\" name=\"no_pesan\" id=\"nopesan\" value=\"\"\r\n");
+              out.write("                        readonly=\"readonly\"/>\r\n");
+              out.write("                        <input type=\"button\" onclick=\"pesan();\" value=\"Add No Pesan\" class=\"button\"></td>\r\n");
+              out.write("                    </tr>\r\n");
+              out.write("                    <tr>\r\n");
               out.write("                        <td>Tanggal Pesan</td>  <td>: <input type=\"text\" name=\"tanggal\" value =");
               out.print( tgl);
-              out.write(" readonly=\"readonly\"></td>\n");
-              out.write("                    </tr>\n");
-              out.write("                    <tr>\n");
-              out.write("                        <td>Barang</td>         <td>: <select name=\"kode\" onchange=\"showEmp(this.value);\">\n");
-              out.write("                                <option value=\"-1\">Pilih Barang</option>\n");
+              out.write(" readonly=\"readonly\"></td>\r\n");
+              out.write("                    </tr>\r\n");
+              out.write("                    <tr>\r\n");
+              out.write("                        <td>Barang</td>         <td>: <select name=\"kode\" onchange=\"showEmp(this.value);\">\r\n");
+              out.write("                                <option value=\"-1\">Pilih Barang</option>\r\n");
               out.write("                                ");
 
                                 rs = kon.stmt.executeQuery("SELECT * from barang");
@@ -276,40 +277,40 @@ ResultSet qrypemesanan = null;
                                     barang.setKodebarang(rs.getString("kd_brg"));
                                     barang.setNamabarang(rs.getString("nm_brg"));
                                 
-              out.write("\n");
+              out.write("\r\n");
               out.write("                                <option value=\"");
               out.print(barang.getKodebarang());
               out.write('"');
               out.write('>');
               out.print(barang.getKodebarang());
-              out.write("\n");
+              out.write("\r\n");
               out.write("                                    || ");
               out.print(barang.getNamabarang());
-              out.write("</option>\n");
+              out.write("</option>\r\n");
               out.write("                                ");
  } 
-              out.write("\n");
-              out.write("                            </select></td>\n");
-              out.write("                    </tr>\n");
-              out.write("                    <input type=\"hidden\" name=\"emp_id\" id=\"emp_id\" value=\"\">\n");
-              out.write("                    <tr>\n");
-              out.write("                        <td>Harga Barang</td>   <td>: <input type=\"text\" name=\"harga\" id=\"ename\" value=\"\"\n");
-              out.write("                        readonly=\"readonly\" onkeyup=\"sumPesan();\"></td>\n");
-              out.write("                    </tr>\n");
-              out.write("                    <tr>\n");
-              out.write("                        <td>Jumlah Pesan</td>   <td>: <input type=\"text\" name=\"jml\" id=\"jml\" onkeyup=\"sumPesan();\"></td>\n");
-              out.write("                    </tr>\n");
-              out.write("                    <tr>\n");
-              out.write("                        <td>Subtotal</td>       <td>: <input type=\"text\" name=\"sub\" id=\"subtotal\"  \n");
-              out.write("                        readonly=\"readonly\"></td>\n");
-              out.write("                    </tr>\n");
-              out.write("                    <tr>\n");
-              out.write("                        <td><input type=\"submit\" value=\"TAMBAH\" name=\"aksi1\"></td>\n");
-              out.write("                    </tr>\n");
-              out.write("            </table>\n");
-              out.write("            <h2>Data Supplier</h2>\n");
-              out.write("            Supplier    <select name=\"supplier\">\n");
-              out.write("                <option value=\"-1\">Pilih Supplier</option>\n");
+              out.write("\r\n");
+              out.write("                            </select></td>\r\n");
+              out.write("                    </tr>\r\n");
+              out.write("                    <input type=\"hidden\" name=\"emp_id\" id=\"emp_id\" value=\"\">\r\n");
+              out.write("                    <tr>\r\n");
+              out.write("                        <td>Harga Barang</td>   <td>: <input type=\"text\" name=\"harga\" id=\"ename\" value=\"\"\r\n");
+              out.write("                        readonly=\"readonly\" onkeyup=\"sumPesan();\"></td>\r\n");
+              out.write("                    </tr>\r\n");
+              out.write("                    <tr>\r\n");
+              out.write("                        <td>Jumlah Pesan</td>   <td>: <input type=\"text\" name=\"jml\" id=\"jml\" onkeyup=\"sumPesan();\"></td>\r\n");
+              out.write("                    </tr>\r\n");
+              out.write("                    <tr>\r\n");
+              out.write("                        <td>Subtotal</td>       <td>: <input type=\"text\" name=\"sub\" id=\"subtotal\"  \r\n");
+              out.write("                        readonly=\"readonly\"></td>\r\n");
+              out.write("                    </tr>\r\n");
+              out.write("                    <tr>\r\n");
+              out.write("                        <td><input type=\"submit\" value=\"TAMBAH\" name=\"aksi1\"></td>\r\n");
+              out.write("                    </tr>\r\n");
+              out.write("            </table>\r\n");
+              out.write("            <h2>Data Supplier</h2>\r\n");
+              out.write("            Supplier    <select name=\"supplier\">\r\n");
+              out.write("                <option value=\"-1\">Pilih Supplier</option>\r\n");
               out.write("                ");
 
                 rs = kon.stmt.executeQuery("SELECT * from supplier ");
@@ -317,28 +318,28 @@ ResultSet qrypemesanan = null;
                     supplier.setKodesupp(rs.getString("kd_supp"));
                     supplier.setNamasupp(rs.getString("nm_supp"));
                 
-              out.write("\n");
+              out.write("\r\n");
               out.write("                <option value=\"");
               out.print(supplier.getKodesupp());
               out.write('"');
               out.write('>');
               out.print(supplier.getNamasupp());
-              out.write("</option>\n");
+              out.write("</option>\r\n");
               out.write("                ");
  } 
-              out.write("\n");
-              out.write("            </select><br><br>\n");
-              out.write("            \n");
-              out.write("            <table width=\"535\" border=\"1\" align=\"center\">\n");
-              out.write("                <tr align=\"center\">\n");
-              out.write("                    <td colspan=\"5\"><h3>Data Barang Untuk Dipesan</h3></td>\n");
-              out.write("                </tr>\n");
-              out.write("                <tr>\n");
-              out.write("                    <th>Kode Barang</th>\n");
-              out.write("                    <th>Quantity</th>\n");
-              out.write("                    <th>Subtotal</th>\n");
-              out.write("                    <th>AKSI</th>\n");
-              out.write("                </tr>\n");
+              out.write("\r\n");
+              out.write("            </select><br><br>\r\n");
+              out.write("            \r\n");
+              out.write("            <table width=\"535\" border=\"1\" align=\"center\">\r\n");
+              out.write("                <tr align=\"center\">\r\n");
+              out.write("                    <td colspan=\"5\"><h3>Data Barang Untuk Dipesan</h3></td>\r\n");
+              out.write("                </tr>\r\n");
+              out.write("                <tr>\r\n");
+              out.write("                    <th>Kode Barang</th>\r\n");
+              out.write("                    <th>Quantity</th>\r\n");
+              out.write("                    <th>Subtotal</th>\r\n");
+              out.write("                    <th>AKSI</th>\r\n");
+              out.write("                </tr>\r\n");
               out.write("                ");
 
                     rs = kon.stmt.executeQuery("SELECT * from sementara");
@@ -351,22 +352,22 @@ ResultSet qrypemesanan = null;
                         + "</tr>");
                         }
                   
-              out.write("\n");
-              out.write("            </table>\n");
+              out.write("\r\n");
+              out.write("            </table>\r\n");
               out.write("                  ");
               if (_jspx_meth_c_forEach_4((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_when_5, _jspx_page_context))
                 return;
-              out.write("\n");
+              out.write("\r\n");
               out.write("                  ");
 kon.close();
-              out.write("\n");
-              out.write("                          <tr><td><input type=\"submit\" value=\"PROSES\" name=\"aksi3\"> <input type=\"reset\" value=\"CANCEL\"></td></tr>\n");
-              out.write("                      </table>\n");
-              out.write("                </form>\n");
-              out.write("    </body>\n");
-              out.write("</html>\n");
-              out.write("\n");
-              out.write("\n");
+              out.write("\r\n");
+              out.write("                          <tr><td><input type=\"submit\" value=\"PROSES\" name=\"aksi3\"> <input type=\"reset\" value=\"CANCEL\"></td></tr>\r\n");
+              out.write("                      </table>\r\n");
+              out.write("                </form>\r\n");
+              out.write("    </body>\r\n");
+              out.write("</html>\r\n");
+              out.write("\r\n");
+              out.write("\r\n");
               out.write("                        ");
               int evalDoAfterBody = _jspx_th_c_when_5.doAfterBody();
               if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -378,7 +379,7 @@ kon.close();
             return;
           }
           _jspx_tagPool_c_when_test.reuse(_jspx_th_c_when_5);
-          out.write("\n");
+          out.write("\r\n");
           out.write("                        ");
           //  c:when
           org.apache.taglibs.standard.tag.rt.core.WhenTag _jspx_th_c_when_6 = (org.apache.taglibs.standard.tag.rt.core.WhenTag) _jspx_tagPool_c_when_test.get(org.apache.taglibs.standard.tag.rt.core.WhenTag.class);
@@ -388,7 +389,7 @@ kon.close();
           int _jspx_eval_c_when_6 = _jspx_th_c_when_6.doStartTag();
           if (_jspx_eval_c_when_6 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
             do {
-              out.write("\n");
+              out.write("\r\n");
               out.write("                            ");
               out.write("\n");
               out.write("\n");
@@ -580,7 +581,7 @@ String nof = "FK" + no.substring(2);
               out.write("            </table>\n");
               out.write("    </body>\n");
               out.write("</html>");
-              out.write("\n");
+              out.write("\r\n");
               out.write("                        ");
               int evalDoAfterBody = _jspx_th_c_when_6.doAfterBody();
               if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -592,7 +593,7 @@ String nof = "FK" + no.substring(2);
             return;
           }
           _jspx_tagPool_c_when_test.reuse(_jspx_th_c_when_6);
-          out.write("\n");
+          out.write("\r\n");
           out.write("                        ");
           //  c:when
           org.apache.taglibs.standard.tag.rt.core.WhenTag _jspx_th_c_when_7 = (org.apache.taglibs.standard.tag.rt.core.WhenTag) _jspx_tagPool_c_when_test.get(org.apache.taglibs.standard.tag.rt.core.WhenTag.class);
@@ -602,16 +603,16 @@ String nof = "FK" + no.substring(2);
           int _jspx_eval_c_when_7 = _jspx_th_c_when_7.doStartTag();
           if (_jspx_eval_c_when_7 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
             do {
-              out.write("\n");
+              out.write("\r\n");
               out.write("                            ");
-              out.write("\n");
-              out.write("\n");
-              out.write("\n");
-              out.write("\n");
-              out.write("\n");
-              out.write("\n");
-              out.write("\n");
-              out.write("<!DOCTYPE html>\n");
+              out.write("\r\n");
+              out.write("\r\n");
+              out.write("\r\n");
+              out.write("\r\n");
+              out.write("\r\n");
+              out.write("\r\n");
+              out.write("\r\n");
+              out.write("<!DOCTYPE html>\r\n");
  java.util.Date waktu = new java.util.Date();
     int tanggal = waktu.getDate();
     int tahun = waktu.getYear() + 1900;
@@ -626,22 +627,22 @@ String nof = "FK" + no.substring(2);
     ResultSet qryjurnal = null;
     ResultSet qrypembelian = null;
 
-              out.write("\n");
-              out.write("<html>\n");
-              out.write("    <head>\n");
-              out.write("    <tittle>Transaksi Jurnal Umum</tittle>\n");
-              out.write("    </head>\n");
-              out.write("    <body>\n");
+              out.write("\r\n");
+              out.write("<html>\r\n");
+              out.write("    <head>\r\n");
+              out.write("    <tittle>Transaksi Jurnal Umum</tittle>\r\n");
+              out.write("    </head>\r\n");
+              out.write("    <body>\r\n");
               out.write("        ");
               if (_jspx_meth_sql_query_6((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_when_7, _jspx_page_context))
                 return;
-              out.write("\n");
-              out.write("<h2>Transaksi Retur</h2>\n");
-              out.write("<table border=\"0\">\n");
-              out.write("<form action=\"ServletJurnal\" method=\"post\" onsubmit=\"return validasi_inputJurnal(this)\">\n");
-              out.write("<pre>\n");
-              out.write("<tr>\n");
-              out.write("<td>No Jurnal</td>  \n");
+              out.write("\r\n");
+              out.write("<h2>Transaksi Retur</h2>\r\n");
+              out.write("<table border=\"0\">\r\n");
+              out.write("<form action=\"ServletJurnal\" method=\"post\" onsubmit=\"return validasi_inputJurnal(this)\">\r\n");
+              out.write("<pre>\r\n");
+              out.write("<tr>\r\n");
+              out.write("<td>No Jurnal</td>  \r\n");
               out.write("<td>: ");
 
 try {
@@ -667,19 +668,19 @@ out.println("<input type='text' class='form-control' id='nojur' readonly='readon
 out.println(e);
 }
 
-              out.write("\n");
-              out.write("</pre></td>\n");
-              out.write("</tr>\n");
-              out.write("<tr>\n");
-              out.write("<td>Tanggal Jurnal</td>  \n");
+              out.write("\r\n");
+              out.write("</pre></td>\r\n");
+              out.write("</tr>\r\n");
+              out.write("<tr>\r\n");
+              out.write("<td>Tanggal Jurnal</td>  \r\n");
               out.write("<td>: <input type=\"text\" name=\"tanggal\" value =");
               out.print( tgljurnal);
-              out.write(" readonly=\"readonly\"></td>\n");
-              out.write("</tr>\n");
-              out.write("<tr>\n");
-              out.write("<td>No Bukti Transaksi</td>\n");
-              out.write("<td>: <select name=\"nobeli\" onchange=\"showBeli(this.value);\">\n");
-              out.write("                            <option value=\"-1\">Pilih Nomor Pembelian</option>\n");
+              out.write(" readonly=\"readonly\"></td>\r\n");
+              out.write("</tr>\r\n");
+              out.write("<tr>\r\n");
+              out.write("<td>No Bukti Transaksi</td>\r\n");
+              out.write("<td>: <select name=\"nobeli\" onchange=\"showPesan(this.value);\">\r\n");
+              out.write("                            <option value=\"-1\">Pilih Nomor Pembelian</option>\r\n");
               out.write("                            ");
 
                             qrypembelian = kon.stmt.executeQuery("SELECT no_beli FROM pembelian where not exists"
@@ -687,178 +688,178 @@ out.println(e);
                             while (qrypembelian.next()) {
                                 pembelian.setNobeli(qrypembelian.getString("no_beli"));
                             
-              out.write("\n");
+              out.write("\r\n");
               out.write("                            <option value=\"");
               out.print(pembelian.getNobeli());
               out.write('"');
               out.write('>');
               out.print(pembelian.getNobeli());
-              out.write("</option>\n");
+              out.write("</option>\r\n");
               out.write("                            ");
  } 
-              out.write("\n");
-              out.write("                    </select>\n");
-              out.write("                    </td>\n");
-              out.write("                    </tr>\n");
-              out.write("            <input type=\"hidden\" name=\"nobeli\" id=\"nobeli\" value=\"");
+              out.write("\r\n");
+              out.write("                    </select>\r\n");
+              out.write("                    </td>\r\n");
+              out.write("                    </tr>\r\n");
+              out.write("            <input type=\"hidden\" name=\"emp_id\" id=\"emp_id\" value=\"");
               out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${param.cari}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-              out.write("\">\n");
-              out.write("</tr>\n");
-              out.write("<tr>\n");
-              out.write("<td>Keterangan</td>\n");
-              out.write("<td>: <textarea name=\"keterangan\"></textarea></td>\n");
-              out.write("</tr>\n");
-              out.write("<tr>\n");
-              out.write("<td>Nominal</td>   <td>: <input type=\"text\" name=\"nominal\" id=\"nominal\" value=\"\"\n");
-              out.write("                        readonly=\"readonly\" onkeyup=\"showBeli();\"></td>\n");
-              out.write("                    </tr>\n");
-              out.write("<br><br>\n");
-              out.write("<tr>\n");
-              out.write("<table width=\"100\" border=\"1\" cellpadding=\"0\" cellspacing=\"0\">\n");
-              out.write("<tr class=\"head\">\n");
-              out.write("<td> </td><td>Kode dan Nama Akun</td><td>Debet</td><td>Kredit</td>\n");
-              out.write("</tr>\n");
-              out.write("\n");
-              out.write("<tr class=\"isi\">\n");
+              out.write("\">\r\n");
+              out.write("</tr>\r\n");
+              out.write("<tr>\r\n");
+              out.write("<td>Keterangan</td>\r\n");
+              out.write("<td>: <textarea name=\"keterangan\"></textarea></td>\r\n");
+              out.write("</tr>\r\n");
+              out.write("<tr>\r\n");
+              out.write("<td>Nominal</td>   <td>: <input type=\"text\" name=\"sub\" id=\"subtotal\" value=\"\"\r\n");
+              out.write("                        readonly=\"readonly\" onkeyup=\"showPesan();\"></td>\r\n");
+              out.write("                    </tr>\r\n");
+              out.write("<br><br>\r\n");
+              out.write("<tr>\r\n");
+              out.write("<table width=\"100\" border=\"1\" cellpadding=\"0\" cellspacing=\"0\">\r\n");
+              out.write("<tr class=\"head\">\r\n");
+              out.write("<td> </td><td>Kode dan Nama Akun</td><td>Debet</td><td>Kredit</td>\r\n");
+              out.write("</tr>\r\n");
+              out.write("\r\n");
+              out.write("<tr class=\"isi\">\r\n");
               out.write("<td align=\"center\"><input type=\"checkbox\" name=\"pilih()\" value=\"");
               out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${param.pilih}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-              out.write("\"></td>\n");
-              out.write("<td><select name=\"no_akunkredit\" id=\"akunkredit\">\n");
-              out.write("<option>Kode Akun   | Nama Akun</option>\n");
+              out.write("\"></td>\r\n");
+              out.write("<td><select name=\"no_akunkredit\" id=\"akunkredit\">\r\n");
+              out.write("<option>Kode Akun   | Nama Akun</option>\r\n");
 
 rs =  kon.stmt.executeQuery("SELECT * from akun ");
 while (rs.next()) {
 akun.setNoakun(rs.getString("no_akun"));
 akun.setNamaakun(rs.getString("nm_akun"));
 
-              out.write("\n");
+              out.write("\r\n");
               out.write("<option value=\"");
               out.print(akun.getNoakun());
               out.write('"');
               out.write('>');
               out.print(akun.getNoakun());
-              out.write("\n");
+              out.write("\r\n");
               out.write("|| ");
               out.print(akun.getNamaakun());
-              out.write("</option>\n");
+              out.write("</option>\r\n");
  } 
-              out.write("\n");
-              out.write("</select>\n");
-              out.write("</td>\n");
-              out.write("<td><input name=\"debet\" id=\"debet1\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\n");
-              out.write("<td><input name=\"kredit\" id=\"kredit1\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\n");
-              out.write("</tr>\n");
-              out.write("\n");
-              out.write("<tr class=\"isi\">                         \n");
+              out.write("\r\n");
+              out.write("</select>\r\n");
+              out.write("</td>\r\n");
+              out.write("<td><input name=\"debet\" id=\"debet1\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\r\n");
+              out.write("<td><input name=\"kredit\" id=\"kredit1\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\r\n");
+              out.write("</tr>\r\n");
+              out.write("\r\n");
+              out.write("<tr class=\"isi\">                         \r\n");
               out.write("<td align=\"center\"><input type=\"checkbox\" name=\"pilih()\" value=\"");
               out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${param.pilih}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-              out.write("\"></td>\n");
-              out.write("<td><select name=\"no_akunkredit\" id=\"akunkredit\">\n");
-              out.write("<option>Kode Akun   | Nama Akun</option>\n");
+              out.write("\"></td>\r\n");
+              out.write("<td><select name=\"no_akunkredit\" id=\"akunkredit\">\r\n");
+              out.write("<option>Kode Akun   | Nama Akun</option>\r\n");
 
 rs =  kon.stmt.executeQuery("SELECT * from akun ");
 while (rs.next()) {
 akun.setNoakun(rs.getString("no_akun"));
 akun.setNamaakun(rs.getString("nm_akun"));
 
-              out.write("\n");
+              out.write("\r\n");
               out.write("<option value=\"");
               out.print(akun.getNoakun());
               out.write('"');
               out.write('>');
               out.print(akun.getNoakun());
-              out.write("\n");
+              out.write("\r\n");
               out.write("|| ");
               out.print(akun.getNamaakun());
-              out.write("</option>\n");
+              out.write("</option>\r\n");
  } 
-              out.write("\n");
-              out.write("</select>\n");
-              out.write("</td>\n");
-              out.write("<td><input name=\"debet\" id=\"debet2\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\n");
-              out.write("<td><input name=\"kredit\" id=\"kredit2\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\n");
-              out.write("</tr>\n");
-              out.write("\n");
-              out.write("<tr class=\"isi\">\n");
+              out.write("\r\n");
+              out.write("</select>\r\n");
+              out.write("</td>\r\n");
+              out.write("<td><input name=\"debet\" id=\"debet2\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\r\n");
+              out.write("<td><input name=\"kredit\" id=\"kredit2\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\r\n");
+              out.write("</tr>\r\n");
+              out.write("\r\n");
+              out.write("<tr class=\"isi\">\r\n");
               out.write("<td align=\"center\"><input type=\"checkbox\" name=\"pilih()\" value=\"");
               out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${param.pilih}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-              out.write("\"></td>\n");
-              out.write("<td><select name=\"no_akunkredit\" id=\"akunkredit\">\n");
-              out.write("<option>Kode Akun   | Nama Akun</option>\n");
+              out.write("\"></td>\r\n");
+              out.write("<td><select name=\"no_akunkredit\" id=\"akunkredit\">\r\n");
+              out.write("<option>Kode Akun   | Nama Akun</option>\r\n");
 
 rs =  kon.stmt.executeQuery("SELECT * from akun ");
 while (rs.next()) {
 akun.setNoakun(rs.getString("no_akun"));
 akun.setNamaakun(rs.getString("nm_akun"));
 
-              out.write("\n");
+              out.write("\r\n");
               out.write("<option value=\"");
               out.print(akun.getNoakun());
               out.write('"');
               out.write('>');
               out.print(akun.getNoakun());
-              out.write("\n");
+              out.write("\r\n");
               out.write("|| ");
               out.print(akun.getNamaakun());
-              out.write("</option>\n");
+              out.write("</option>\r\n");
  } 
-              out.write("\n");
-              out.write("</select>\n");
-              out.write("</td>\n");
-              out.write("<td><input name=\"debet\" id=\"debet3\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\n");
-              out.write("<td><input name=\"kredit\" id=\"kredit3\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\n");
-              out.write("</tr>\n");
-              out.write("\n");
-              out.write("<tr class=\"isi\">\n");
+              out.write("\r\n");
+              out.write("</select>\r\n");
+              out.write("</td>\r\n");
+              out.write("<td><input name=\"debet\" id=\"debet3\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\r\n");
+              out.write("<td><input name=\"kredit\" id=\"kredit3\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\r\n");
+              out.write("</tr>\r\n");
+              out.write("\r\n");
+              out.write("<tr class=\"isi\">\r\n");
               out.write("<td align=\"center\"><input type=\"checkbox\" name=\"pilih()\" value=\"");
               out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${param.pilih}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-              out.write("\"></td>\n");
-              out.write("<td><select name=\"no_akunkredit\" id=\"akunkredit\">\n");
-              out.write("<option>Kode Akun   | Nama Akun</option>\n");
+              out.write("\"></td>\r\n");
+              out.write("<td><select name=\"no_akunkredit\" id=\"akunkredit\">\r\n");
+              out.write("<option>Kode Akun   | Nama Akun</option>\r\n");
 
 rs =  kon.stmt.executeQuery("SELECT * from akun ");
 while (rs.next()) {
 akun.setNoakun(rs.getString("no_akun"));
 akun.setNamaakun(rs.getString("nm_akun"));
 
-              out.write("\n");
+              out.write("\r\n");
               out.write("<option value=\"");
               out.print(akun.getNoakun());
               out.write('"');
               out.write('>');
               out.print(akun.getNoakun());
-              out.write("\n");
+              out.write("\r\n");
               out.write("|| ");
               out.print(akun.getNamaakun());
-              out.write("</option>\n");
+              out.write("</option>\r\n");
  } 
-              out.write("\n");
-              out.write("</select>\n");
-              out.write("</td>\n");
-              out.write("<td><input name=\"debet\" id=\"debet4\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\n");
-              out.write("<td><input name=\"kredit\" id=\"kredit4\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\n");
-              out.write("</tr>  \n");
-              out.write("\n");
-              out.write("<tr class=\"head\">\n");
-              out.write("<td colspan=\"2\" align=\"center\">Total</td>\n");
-              out.write("<td>\n");
-              out.write("<input type=\"text\" id=\"ttldebet\" onchange=\"Hitung()\" readonly=\"readonly\"></td>\n");
-              out.write("<td><input type=\"text\" id=\"ttlkredit\" onchange=\"Hitung()\" readonly=\"readonly\"></td>\n");
-              out.write("<tr class=\"head\">\n");
-              out.write("<td colspan=\"2\" align=\"center\">Balance</td>\n");
-              out.write("<td>&nbsp;</td>\n");
-              out.write("<td><input type=\"text\" name=\"balance\" id=\"balance\" readonly=\"readonly\"></td>\n");
-              out.write("</tr>\n");
-              out.write("<tr class=\"isi\">\n");
-              out.write("<td colspan=\"4\" align=\"center\">\n");
-              out.write("<input type=\"submit\" value=\"simpan\" class=\"button\"/>\n");
-              out.write("</td>\n");
-              out.write("</tr>\n");
-              out.write("</table>\n");
-              out.write("</form>\n");
-              out.write("</body>\n");
+              out.write("\r\n");
+              out.write("</select>\r\n");
+              out.write("</td>\r\n");
+              out.write("<td><input name=\"debet\" id=\"debet4\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\r\n");
+              out.write("<td><input name=\"kredit\" id=\"kredit4\" type=\"text\" onchange=\"Hitung()\" value=\"0\"></td>\r\n");
+              out.write("</tr>  \r\n");
+              out.write("\r\n");
+              out.write("<tr class=\"head\">\r\n");
+              out.write("<td colspan=\"2\" align=\"center\">Total</td>\r\n");
+              out.write("<td>\r\n");
+              out.write("<input type=\"text\" id=\"ttldebet\" onchange=\"Hitung()\" readonly=\"readonly\"></td>\r\n");
+              out.write("<td><input type=\"text\" id=\"ttlkredit\" onchange=\"Hitung()\" readonly=\"readonly\"></td>\r\n");
+              out.write("<tr class=\"head\">\r\n");
+              out.write("<td colspan=\"2\" align=\"center\">Balance</td>\r\n");
+              out.write("<td>&nbsp;</td>\r\n");
+              out.write("<td><input type=\"text\" name=\"balance\" id=\"balance\" readonly=\"readonly\"></td>\r\n");
+              out.write("</tr>\r\n");
+              out.write("<tr class=\"isi\">\r\n");
+              out.write("<td colspan=\"4\" align=\"center\">\r\n");
+              out.write("<input type=\"submit\" value=\"simpan\" class=\"button\"/>\r\n");
+              out.write("</td>\r\n");
+              out.write("</tr>\r\n");
+              out.write("</table>\r\n");
+              out.write("</form>\r\n");
+              out.write("</body>\r\n");
               out.write("</html>");
-              out.write("\n");
+              out.write("\r\n");
               out.write("                        ");
               int evalDoAfterBody = _jspx_th_c_when_7.doAfterBody();
               if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -870,7 +871,7 @@ akun.setNamaakun(rs.getString("nm_akun"));
             return;
           }
           _jspx_tagPool_c_when_test.reuse(_jspx_th_c_when_7);
-          out.write("\n");
+          out.write("\r\n");
           out.write("                        ");
           //  c:when
           org.apache.taglibs.standard.tag.rt.core.WhenTag _jspx_th_c_when_8 = (org.apache.taglibs.standard.tag.rt.core.WhenTag) _jspx_tagPool_c_when_test.get(org.apache.taglibs.standard.tag.rt.core.WhenTag.class);
@@ -880,13 +881,13 @@ akun.setNamaakun(rs.getString("nm_akun"));
           int _jspx_eval_c_when_8 = _jspx_th_c_when_8.doStartTag();
           if (_jspx_eval_c_when_8 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
             do {
-              out.write("\n");
+              out.write("\r\n");
               out.write("                            ");
-              out.write("\n");
-              out.write("\n");
-              out.write("\n");
-              out.write("\n");
-              out.write("\n");
+              out.write("\r\n");
+              out.write("\r\n");
+              out.write("\r\n");
+              out.write("\r\n");
+              out.write("\r\n");
  java.util.Date waktu = new java.util.Date();
 int tanggal = waktu.getDate();
 int tahun = waktu.getYear() + 1900;
@@ -900,21 +901,21 @@ ResultSet rs = null;
 ResultSet qryretur = null;
 ResultSet qrybarang = null;
 
-              out.write("\n");
-              out.write("<html>\n");
-              out.write("    <head>\n");
-              out.write("    <tittle>Transaksi Retur</tittle>\n");
-              out.write("    </head>\n");
-              out.write("    <body>\n");
+              out.write("\r\n");
+              out.write("<html>\r\n");
+              out.write("    <head>\r\n");
+              out.write("    <tittle>Transaksi Retur</tittle>\r\n");
+              out.write("    </head>\r\n");
+              out.write("    <body>\r\n");
               out.write("        ");
               if (_jspx_meth_sql_query_7((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_when_8, _jspx_page_context))
                 return;
-              out.write("\n");
-              out.write("                    <h2>Transaksi Retur</h2>\n");
-              out.write("                    <table border=\"0\">\n");
-              out.write("                    <form action=\"ServletRetur\" method=\"post\" onsubmit=\"return validasi_inputRetur(this)\">\n");
-              out.write("                    <pre>\n");
-              out.write("<tr>\n");
+              out.write("\r\n");
+              out.write("                    <h2>Transaksi Retur</h2>\r\n");
+              out.write("                    <table border=\"0\">\r\n");
+              out.write("                    <form action=\"ServletRetur\" method=\"post\" onsubmit=\"return validasi_inputRetur(this)\">\r\n");
+              out.write("                    <pre>\r\n");
+              out.write("<tr>\r\n");
               out.write("<td>No Retur</td>  <td>");
 
         try {
@@ -941,15 +942,15 @@ ResultSet qrybarang = null;
               out.println(e);
             }
             
-              out.write("\n");
-              out.write("                    </pre></td>\n");
-              out.write("</tr>\n");
-              out.write("        <tr>\n");
+              out.write("\r\n");
+              out.write("    </td>\r\n");
+              out.write("</tr>\r\n");
+              out.write("        <tr>\r\n");
               out.write("            <td>Tanggal Retur</td>  <td><input type=\"text\" name=\"tanggal\" value=");
               out.print( tgl);
-              out.write(" ></td>\n");
-              out.write("        </tr>\n");
-              out.write("        <tr><td>Supplier</td>  <td><select name=\"supplier\">\n");
+              out.write(" ></td>\r\n");
+              out.write("        </tr>\r\n");
+              out.write("        <tr><td>Supplier</td>  <td><select name=\"supplier\">\r\n");
               out.write("        ");
  
             rs = kon.stmt.executeQuery("SELECT * from supplier ");
@@ -957,21 +958,21 @@ ResultSet qrybarang = null;
                 supplier.setKodesupp(rs.getString("kd_supp"));
                 supplier.setNamasupp(rs.getString("nm_supp"));
         
-              out.write("\n");
+              out.write("\r\n");
               out.write("        <option value=\"");
               out.print(supplier.getKodesupp());
               out.write('"');
               out.write('>');
               out.print(supplier.getNamasupp());
-              out.write("</option>\n");
+              out.write("</option>\r\n");
               out.write("        ");
   } 
-              out.write("\n");
-              out.write("    </select></td>\n");
-              out.write("        </tr>\n");
-              out.write("        <tr>\n");
-              out.write("            <td>Barang</td>  <td><select name=\"kode\" onchange=\"showEmp(this.value);\">\n");
-              out.write("                        <option value=\"-1\">Select</option>\n");
+              out.write("\r\n");
+              out.write("    </select></td>\r\n");
+              out.write("        </tr>\r\n");
+              out.write("        <tr>\r\n");
+              out.write("            <td>Barang</td>  <td><select name=\"kode\" onchange=\"showEmp(this.value);\">\r\n");
+              out.write("                        <option value=\"-1\">Select</option>\r\n");
               out.write("                        ");
 
                             rs =  kon.stmt.executeQuery("SELECT * from barang ");
@@ -979,47 +980,47 @@ ResultSet qrybarang = null;
                                 barang.setKodebarang(rs.getString("kd_brg"));
                                 barang.setNamabarang(rs.getString("nm_brg"));
                         
-              out.write("\n");
+              out.write("\r\n");
               out.write("                        <option value=\"");
               out.print(barang.getKodebarang());
               out.write('"');
               out.write('>');
               out.print(barang.getKodebarang());
-              out.write("||\n");
+              out.write("||\r\n");
               out.write("                        ");
               out.print(barang.getNamabarang());
-              out.write("</option>\n");
+              out.write("</option>\r\n");
               out.write("                        ");
  } 
-              out.write("\n");
-              out.write("                </select></td>\n");
-              out.write("        </tr>\n");
-              out.write("        <tr>\n");
-              out.write("            <td><input type=\"hidden\" name=\"emp_id\" id=\"emp_id\" value=\"\"></td>\n");
-              out.write("        </tr>\n");
-              out.write("        <tr>\n");
-              out.write("            <td>Harga Barang</td>    <td><input type=\"text\" name=\"harga\" id=\"ename\" value=\"\"\n");
-              out.write("                                   readonly=\"readonly\" onkeyup=\"sumvalidasi_inputRetur();\"></td>\n");
-              out.write("        </tr>\n");
-              out.write("        <tr>\n");
-              out.write("            <td>Jumlah Pesan</td>    <td><input type=\"text\" name=\"jml\" id=\"jml\" onkeyup=\"sumvalidasi_inputRetur();\"></td>\n");
-              out.write("        </tr>\n");
-              out.write("        <tr>\n");
-              out.write("            <td>Subtotal</td>  <td><input type=\"text\" name=\"sub\" id=\"subtotal\" readonly=\"readonly\"></td>\n");
-              out.write("        </tr>\n");
-              out.write("        <tr><td><input type=\"submit\" value=\"TAMBAH\" name=\"aksi1\"></td></tr>          \n");
-              out.write("        \n");
-              out.write("            <table width=\"535\" border=\"0\" align=\"center\">\n");
-              out.write("                <tr align=\"center\">\n");
-              out.write("                    <td colspan=\"5\"><h3>Data Barang Untuk Diretur</h3></td>\n");
-              out.write("                </tr>\n");
-              out.write("                <tr>\n");
-              out.write("                    <th>Nomor Transaksi</th>\n");
-              out.write("                    <th>Kode Barang</th>\n");
-              out.write("                    <th>Quantity</th>\n");
-              out.write("                    <th>Subtotal</th>\n");
-              out.write("                    <th>AKSI</th>\n");
-              out.write("                </tr>\n");
+              out.write("\r\n");
+              out.write("                </select></td>\r\n");
+              out.write("        </tr>\r\n");
+              out.write("        <tr>\r\n");
+              out.write("            <td><input type=\"hidden\" name=\"emp_id\" id=\"emp_id\" value=\"\"></td>\r\n");
+              out.write("        </tr>\r\n");
+              out.write("        <tr>\r\n");
+              out.write("            <td>Harga Barang</td>    <td><input type=\"text\" name=\"harga\" id=\"ename\" value=\"\"\r\n");
+              out.write("                                   readonly=\"readonly\" onkeyup=\"sumvalidasi_inputRetur();\"></td>\r\n");
+              out.write("        </tr>\r\n");
+              out.write("        <tr>\r\n");
+              out.write("            <td>Jumlah Pesan</td>    <td><input type=\"text\" name=\"jml\" id=\"jml\" onkeyup=\"sumvalidasi_inputRetur();\"></td>\r\n");
+              out.write("        </tr>\r\n");
+              out.write("        <tr>\r\n");
+              out.write("            <td>Subtotal</td>  <td><input type=\"text\" name=\"sub\" id=\"subtotal\" readonly=\"readonly\"></td>\r\n");
+              out.write("        </tr>\r\n");
+              out.write("        <tr><td><input type=\"submit\" value=\"TAMBAH\" name=\"aksi1\"></td></tr>          \r\n");
+              out.write("        \r\n");
+              out.write("            <table width=\"535\" border=\"1\" align=\"center\">\r\n");
+              out.write("                <tr align=\"center\">\r\n");
+              out.write("                    <td colspan=\"5\"><h3>Data Barang Untuk Diretur</h3></td>\r\n");
+              out.write("                </tr>\r\n");
+              out.write("                <tr>\r\n");
+              out.write("                    <th>Nomor Transaksi</th>\r\n");
+              out.write("                    <th>Kode Barang</th>\r\n");
+              out.write("                    <th>Quantity</th>\r\n");
+              out.write("                    <th>Subtotal</th>\r\n");
+              out.write("                    <th>AKSI</th>\r\n");
+              out.write("                </tr>\r\n");
               out.write("                ");
 
                     rs = kon.stmt.executeQuery("SELECT * from sementara_retur");
@@ -1029,19 +1030,24 @@ ResultSet qrybarang = null;
                         + "<td>" + rs.getString(2) + "</td>"
                         + "<td>" + rs.getString(3) + "</td>"
                         + "<td>" + rs.getString(4) + "</td>"
-                        + "<td><a href=ServletRetur?aksi2=HAPUS&kode=" + rs.getString(2) + ">Hapus</a></td>"
+                        + "<td><a href=ServletRetur?aksi2=HAPUS&no_retur=" + rs.getString(1) + ">Hapus</a></td>"
                         + "</tr>");
                         }
                   
-              out.write("\n");
-              out.write("            </table>\n");
-              out.write("     <input type=\"submit\" value=\"SIMPAN\" name=\"aksi3\"> <input type=\"reset\" value=\"Cancel\">\n");
-              out.write("                </form>\n");
-              out.write("    </body>\n");
-              out.write("</html>\n");
-              out.write("\n");
-              out.write("\n");
-              out.write("\n");
+              out.write("\r\n");
+              out.write("                  \r\n");
+              out.write("            </table>\r\n");
+              out.write("                  ");
+kon.close();
+              out.write("\r\n");
+              out.write("     <input type=\"submit\" value=\"SIMPAN\" name=\"aksi3\"> <input type=\"reset\" value=\"CANCEL\">\r\n");
+              out.write("                    </pre>\r\n");
+              out.write("                </form>\r\n");
+              out.write("    </body>\r\n");
+              out.write("</html>\r\n");
+              out.write("\r\n");
+              out.write("\r\n");
+              out.write("\r\n");
               out.write("                        ");
               int evalDoAfterBody = _jspx_th_c_when_8.doAfterBody();
               if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -1053,11 +1059,15 @@ ResultSet qrybarang = null;
             return;
           }
           _jspx_tagPool_c_when_test.reuse(_jspx_th_c_when_8);
-          out.write("\n");
+          out.write("\r\n");
+          out.write("                        ");
+          if (_jspx_meth_c_when_9((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_choose_0, _jspx_page_context))
+            return;
+          out.write("\r\n");
           out.write("                        ");
           if (_jspx_meth_c_otherwise_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_choose_0, _jspx_page_context))
             return;
-          out.write("\n");
+          out.write("\r\n");
           out.write("                    ");
           int evalDoAfterBody = _jspx_th_c_choose_0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -1069,56 +1079,57 @@ ResultSet qrybarang = null;
         return;
       }
       _jspx_tagPool_c_choose.reuse(_jspx_th_c_choose_0);
-      out.write("\n");
-      out.write("                </div>\n");
-      out.write("                </div>\n");
-      out.write("            \n");
-      out.write("            <div id=\"right_column\">\n");
-      out.write("\n");
-      out.write("                <ul class=\"menu\">\n");
-      out.write("                <li><a href=\"beranda.jsp\">Home</a></li>\n");
-      out.write("                <li><a href=\"beranda.jsp?halaman=tampilbrg&aksi=SIMPAN\">Data Barang</a></li>\n");
-      out.write("                <li><a href=\"beranda.jsp?halaman=tampilsup&aksi=SIMPAN\">Data Supplier</a></li>\n");
-      out.write("                <li><a href=\"beranda.jsp?halaman=tampiluse&aksi=SIMPAN\">Data User</a></li>\n");
-      out.write("                <li><a href=\"beranda.jsp?halaman=tampilaku&aksi=SIMPAN\">Data Akun</a></li>\n");
-      out.write("                <li><a href=\"beranda.jsp?halaman=pesan\">Pemesanan</a></li>\n");
-      out.write("                <li><a href=\"beranda.jsp?halaman=beli\">Pembelian</a></li>\n");
-      out.write("                <li><a href=\"beranda.jsp?halaman=retur\">Retur Pembelian</a></li>\n");
-      out.write("                <li><a href=\"beranda.jsp?halaman=jurnal\">Jurnal Umum</a></li>\n");
-      out.write("               </ul>\n");
-      out.write("\n");
-      out.write("                <div class=\"box\" align=\"justify\">\n");
-      out.write("                    <div class=\"subtitle\">Date and Time</div>\n");
+      out.write("\r\n");
+      out.write("                </div>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            \r\n");
+      out.write("            <div id=\"right_column\">\r\n");
+      out.write("\r\n");
+      out.write("                <ul class=\"menu\">\r\n");
+      out.write("                <li><a href=\"beranda.jsp\">Home</a></li>\r\n");
+      out.write("                <li><a href=\"beranda.jsp?halaman=tampilbrg&aksi=SIMPAN\">Data Barang</a></li>\r\n");
+      out.write("                <li><a href=\"beranda.jsp?halaman=tampilsup&aksi=SIMPAN\">Data Supplier</a></li>\r\n");
+      out.write("                <li><a href=\"beranda.jsp?halaman=tampiluse&aksi=SIMPAN\">Data User</a></li>\r\n");
+      out.write("                <li><a href=\"beranda.jsp?halaman=tampilaku&aksi=SIMPAN\">Data Akun</a></li>\r\n");
+      out.write("                <li><a href=\"beranda.jsp?halaman=pesan\">Pemesanan</a></li>\r\n");
+      out.write("                <li><a href=\"beranda.jsp?halaman=beli\">Pembelian</a></li>\r\n");
+      out.write("                <li><a href=\"beranda.jsp?halaman=retur\">Retur Pembelian</a></li>\r\n");
+      out.write("                <li><a href=\"beranda.jsp?halaman=jurnal\">Jurnal Umum</a></li>\r\n");
+      out.write("                <li><a href=\"beranda.jsp?hal=cetaklapbarang\">Laporan Barang</a></li>\r\n");
+      out.write("               </ul>\r\n");
+      out.write("\r\n");
+      out.write("                <div class=\"box\" align=\"justify\">\r\n");
+      out.write("                    <div class=\"subtitle\">Date and Time</div>\r\n");
       out.write("                    <marquee direction=\"left\"> ");
       out.print(new java.util.Date());
-      out.write("\n");
-      out.write("                    </marquee>\n");
-      out.write("                    <br/>\n");
-      out.write("                </div>\n");
-      out.write("                <div class=\"box\" align=\"justify\">\n");
-      out.write("                    <div class=\"subtitle\">About this website</div>\n");
-      out.write("                    <marquee behavior=\"scroll\" direction=\"up\" scrollamount=\"5\">\n");
-      out.write("                        SISTEM INFORMASI AKUNTANSI UNIVERSITAS BSI APLIKASI PEMBELIAN\n");
-      out.write("                    </marquee>\n");
-      out.write("                </div>\n");
-      out.write("                <div class=\"box\">\n");
-      out.write("                    <div class=\"subtitle\">About this website</div>\n");
-      out.write("                    <marquee direction=\"down\" height=\"200\" behavior=\"alternate\">\n");
-      out.write("                        <marquee marquee behavior=\"alternate\">\n");
-      out.write("                            SISTEM INFORMASI AKUNTANSI<br>UNIVERSITAS BSI<br>APLIKASI PEMBELIAN\n");
-      out.write("                        </marquee>\n");
-      out.write("                    </marquee>\n");
-      out.write("                </div>\n");
-      out.write("            </div>\n");
-      out.write("\n");
-      out.write("            <div id=\"footer\">\n");
-      out.write("                Copyright © 2020 PRODI SISTEM INFORMASI AKUNTANSI UBSI \n");
-      out.write("            </div>\n");
-      out.write("\n");
-      out.write("        </div>\n");
-      out.write("        <div class=\"spacer\"></div>\n");
-      out.write("    </div> \n");
-      out.write("</body>\n");
+      out.write("\r\n");
+      out.write("                    </marquee>\r\n");
+      out.write("                    <br/>\r\n");
+      out.write("                </div>\r\n");
+      out.write("                <div class=\"box\" align=\"justify\">\r\n");
+      out.write("                    <div class=\"subtitle\">About this website</div>\r\n");
+      out.write("                    <marquee behavior=\"scroll\" direction=\"up\" scrollamount=\"5\">\r\n");
+      out.write("                        SISTEM INFORMASI AKUNTANSI UNIVERSITAS BSI APLIKASI PEMBELIAN\r\n");
+      out.write("                    </marquee>\r\n");
+      out.write("                </div>\r\n");
+      out.write("                <div class=\"box\">\r\n");
+      out.write("                    <div class=\"subtitle\">About this website</div>\r\n");
+      out.write("                    <marquee direction=\"down\" height=\"200\" behavior=\"alternate\">\r\n");
+      out.write("                        <marquee marquee behavior=\"alternate\">\r\n");
+      out.write("                            SISTEM INFORMASI AKUNTANSI<br>UNIVERSITAS BSI<br>APLIKASI PEMBELIAN\r\n");
+      out.write("                        </marquee>\r\n");
+      out.write("                    </marquee>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("\r\n");
+      out.write("            <div id=\"footer\">\r\n");
+      out.write("                Copyright © 2020 PRODI SISTEM INFORMASI AKUNTANSI UBSI \r\n");
+      out.write("            </div>\r\n");
+      out.write("\r\n");
+      out.write("        </div>\r\n");
+      out.write("        <div class=\"spacer\"></div>\r\n");
+      out.write("    </div> \r\n");
+      out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
@@ -1167,7 +1178,7 @@ ResultSet qrybarang = null;
     int _jspx_eval_c_when_0 = _jspx_th_c_when_0.doStartTag();
     if (_jspx_eval_c_when_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n");
+        out.write("\r\n");
         out.write("                            ");
         out.write("<div class=\"box2\" align=\"justify\">\n");
         out.write("    <div class=\"post_title\">HOME WEBSITE</div>\n");
@@ -1178,7 +1189,7 @@ ResultSet qrybarang = null;
         out.write("        Aplikasi ini membahas tentang sistem informasi pembelian yang dimulai dari pengolahan data barang, pengolahan data supplier, proses data pemesanan, proses data pembelian, proses data retur, cetak semua laporan transaksi hingga cetak laporan jurnal umum. \n");
         out.write("    </div>\n");
         out.write("</div>");
-        out.write("\n");
+        out.write("\r\n");
         out.write("                        ");
         int evalDoAfterBody = _jspx_th_c_when_0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -1205,7 +1216,7 @@ ResultSet qrybarang = null;
     int _jspx_eval_c_when_1 = _jspx_th_c_when_1.doStartTag();
     if (_jspx_eval_c_when_1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n");
+        out.write("\r\n");
         out.write("                            ");
         out.write("\n");
         out.write("\n");
@@ -1265,7 +1276,7 @@ ResultSet qrybarang = null;
           return true;
         out.write("\n");
         out.write("</table>\n");
-        out.write("\n");
+        out.write("\r\n");
         out.write("                        ");
         int evalDoAfterBody = _jspx_th_c_when_1.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -1407,7 +1418,7 @@ ResultSet qrybarang = null;
     int _jspx_eval_c_when_2 = _jspx_th_c_when_2.doStartTag();
     if (_jspx_eval_c_when_2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n");
+        out.write("\r\n");
         out.write("                            ");
         out.write("\n");
         out.write("\n");
@@ -1466,7 +1477,7 @@ ResultSet qrybarang = null;
           return true;
         out.write("\n");
         out.write("</table>\n");
-        out.write("\n");
+        out.write("\r\n");
         out.write("                        ");
         int evalDoAfterBody = _jspx_th_c_when_2.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -1607,7 +1618,7 @@ ResultSet qrybarang = null;
     int _jspx_eval_c_when_3 = _jspx_th_c_when_3.doStartTag();
     if (_jspx_eval_c_when_3 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n");
+        out.write("\r\n");
         out.write("                            ");
         out.write("\n");
         out.write("\n");
@@ -1669,7 +1680,7 @@ ResultSet qrybarang = null;
         out.write("</table>\n");
         out.write("\n");
         out.write("\n");
-        out.write("\n");
+        out.write("\r\n");
         out.write("                        ");
         int evalDoAfterBody = _jspx_th_c_when_3.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -1811,7 +1822,7 @@ ResultSet qrybarang = null;
     int _jspx_eval_c_when_4 = _jspx_th_c_when_4.doStartTag();
     if (_jspx_eval_c_when_4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n");
+        out.write("\r\n");
         out.write("                            ");
         out.write("\n");
         out.write("\n");
@@ -1861,7 +1872,7 @@ ResultSet qrybarang = null;
         out.write("\n");
         out.write("</table>\n");
         out.write("\n");
-        out.write("\n");
+        out.write("\r\n");
         out.write("                        ");
         int evalDoAfterBody = _jspx_th_c_when_4.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -2001,9 +2012,9 @@ ResultSet qrybarang = null;
           _jspx_th_sql_query_4.doInitBody();
         }
         do {
-          out.write("\n");
-          out.write("            SELECT SUM(quantity) AS ttl_D,\n");
-          out.write("            SUM(subtotal) AS ttl_K FROM sementara\n");
+          out.write("\r\n");
+          out.write("            SELECT SUM(quantity) AS ttl_D,\r\n");
+          out.write("            SUM(subtotal) AS ttl_K FROM sementara\r\n");
           out.write("        ");
           int evalDoAfterBody = _jspx_th_sql_query_4.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -2042,16 +2053,16 @@ ResultSet qrybarang = null;
       int _jspx_eval_c_forEach_4 = _jspx_th_c_forEach_4.doStartTag();
       if (_jspx_eval_c_forEach_4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("<br>\n");
-          out.write("                      <table border=\"0\">\n");
-          out.write("                          <tr><td>Total Jumlah Barang Dipesan</td>  <td>:\n");
+          out.write("<br>\r\n");
+          out.write("                      <table border=\"0\">\r\n");
+          out.write("                          <tr><td>Total Jumlah Barang Dipesan</td>  <td>:\r\n");
           out.write("                                  <input type=\"text\" readonly=\"readonly\" name=\"totjum\" size=\"1\" value=\"");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${ttlDK[0]}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\"></td></tr>\n");
-          out.write("                          <tr><td>Total Bayar</td>                  <td>:\n");
+          out.write("\"></td></tr>\r\n");
+          out.write("                          <tr><td>Total Bayar</td>                  <td>:\r\n");
           out.write("                                  <input type=\"text\" readonly=\"readonly\" name=\"tobay\" value=\"");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${ttlDK[1]}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\"></td></tr>\n");
+          out.write("\"></td></tr>\r\n");
           out.write("                      ");
           int evalDoAfterBody = _jspx_th_c_forEach_4.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -2189,9 +2200,9 @@ ResultSet qrybarang = null;
           _jspx_th_sql_query_6.doInitBody();
         }
         do {
-          out.write("\n");
-          out.write("            SELECT SUM(debet) AS ttl_D,\n");
-          out.write("            SUM(kredit) AS ttl_K FROM sementara_jurnal\n");
+          out.write("\r\n");
+          out.write("            SELECT SUM(debet) AS ttl_D,\r\n");
+          out.write("            SUM(kredit) AS ttl_K FROM sementara_jurnal\r\n");
           out.write("        ");
           int evalDoAfterBody = _jspx_th_sql_query_6.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -2236,9 +2247,9 @@ ResultSet qrybarang = null;
           _jspx_th_sql_query_7.doInitBody();
         }
         do {
-          out.write("\n");
-          out.write("            SELECT SUM(quantity) AS ttl_D,\n");
-          out.write("            SUM(subtotal) AS ttl_K FROM sementara_retur\n");
+          out.write("\r\n");
+          out.write("            SELECT SUM(quantity) AS ttl_D,\r\n");
+          out.write("            SUM(subtotal) AS ttl_K FROM sementara_retur\r\n");
           out.write("        ");
           int evalDoAfterBody = _jspx_th_sql_query_7.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -2262,6 +2273,50 @@ ResultSet qrybarang = null;
     return false;
   }
 
+  private boolean _jspx_meth_c_when_9(javax.servlet.jsp.tagext.JspTag _jspx_th_c_choose_0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:when
+    org.apache.taglibs.standard.tag.rt.core.WhenTag _jspx_th_c_when_9 = (org.apache.taglibs.standard.tag.rt.core.WhenTag) _jspx_tagPool_c_when_test.get(org.apache.taglibs.standard.tag.rt.core.WhenTag.class);
+    _jspx_th_c_when_9.setPageContext(_jspx_page_context);
+    _jspx_th_c_when_9.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_choose_0);
+    _jspx_th_c_when_9.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${param.hal=='cetaklapbarang'}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null)).booleanValue());
+    int _jspx_eval_c_when_9 = _jspx_th_c_when_9.doStartTag();
+    if (_jspx_eval_c_when_9 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+      do {
+        out.write("\r\n");
+        out.write("                            ");
+        out.write("\r\n");
+        out.write("<!DOCTYPE html>\r\n");
+        out.write("<html>\r\n");
+        out.write("    <head>\r\n");
+        out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+        out.write("        <title>Cetak Laporan</title>\r\n");
+        out.write("    </head>\r\n");
+        out.write("    <body>\r\n");
+        out.write("        <h2>Cetak Laporan Barang Berdasarkan Stok tersedia</h2>\r\n");
+        out.write("        <form action=\"TampilLapBarang.jsp\" method=\"get\">\r\n");
+        out.write("            Stok <= <input type=\"number\" name=\"jumlah\" value=\"0\">\r\n");
+        out.write("            <input type=\"submit\" name=\"submit\" value=\"Cetak Laporan\"/>\r\n");
+        out.write("        </form>\r\n");
+        out.write("    </body>\r\n");
+        out.write("</html>\r\n");
+        out.write("\r\n");
+        out.write("                        ");
+        int evalDoAfterBody = _jspx_th_c_when_9.doAfterBody();
+        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+          break;
+      } while (true);
+    }
+    if (_jspx_th_c_when_9.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_c_when_test.reuse(_jspx_th_c_when_9);
+      return true;
+    }
+    _jspx_tagPool_c_when_test.reuse(_jspx_th_c_when_9);
+    return false;
+  }
+
   private boolean _jspx_meth_c_otherwise_0(javax.servlet.jsp.tagext.JspTag _jspx_th_c_choose_0, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
@@ -2273,7 +2328,7 @@ ResultSet qrybarang = null;
     int _jspx_eval_c_otherwise_0 = _jspx_th_c_otherwise_0.doStartTag();
     if (_jspx_eval_c_otherwise_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n");
+        out.write("\r\n");
         out.write("                            ");
         out.write("<div class=\"box2\" align=\"justify\">\n");
         out.write("    <div class=\"post_title\">HOME WEBSITE</div>\n");
@@ -2284,7 +2339,7 @@ ResultSet qrybarang = null;
         out.write("        Aplikasi ini membahas tentang sistem informasi pembelian yang dimulai dari pengolahan data barang, pengolahan data supplier, proses data pemesanan, proses data pembelian, proses data retur, cetak semua laporan transaksi hingga cetak laporan jurnal umum. \n");
         out.write("    </div>\n");
         out.write("</div>");
-        out.write("\n");
+        out.write("\r\n");
         out.write("                        ");
         int evalDoAfterBody = _jspx_th_c_otherwise_0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

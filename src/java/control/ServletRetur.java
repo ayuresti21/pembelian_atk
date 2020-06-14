@@ -49,8 +49,8 @@ public class ServletRetur extends pesan {
                 retur.setNoretur(request.getParameter("no_retur"));
                 retur.setTglretur(request.getParameter("tanggal"));
                 retur.setKdsupplier(request.getParameter("supplier"));
-    pstmt=kon.conn.prepareStatement("INSERT detail_retur SELECT '"+retur.getNoretur()+"','"
-            + "nomer,kode,quantity,subtotal FROM sementara_retur"); 
+    pstmt=kon.conn.prepareStatement("INSERT detail_retur SELECT '"+retur.getNoretur()+"',"
+            + "kode,quantity,subtotal FROM sementara_retur"); 
     result=pstmt.executeUpdate();
     pstmt1 = kon.conn.prepareStatement("INSERT INTO retur values('" + retur.getNoretur() + "','"
             + retur.getTglretur() + "','"

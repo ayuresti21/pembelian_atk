@@ -119,15 +119,13 @@ ResultSet qrybarang = null;
                         + "<td>" + rs.getString(2) + "</td>"
                         + "<td>" + rs.getString(3) + "</td>"
                         + "<td>" + rs.getString(4) + "</td>"
-                        + "<td><a href=ServletRetur?aksi2=HAPUS&kode=" + rs.getString(2) + ">Hapus</a></td>"
+                        + "<td><a href=ServletRetur?aksi2=HAPUS&no_retur=" + rs.getString(1) + ">Hapus</a></td>"
                         + "</tr>");
                         }
                   %>
-                  
             </table>
-                  <%kon.close();%>
-     <input type="submit" value="SIMPAN" name="aksi3"> <input type="reset" value="CANCEL">
-                    </pre>
+     <%kon.close();%>
+  <tr><td><input type="submit" value="SIMPAN" name="aksi3"> <input type="reset" value="CANCEL"></td></tr>
                 </form>
     </body>
 </html>
