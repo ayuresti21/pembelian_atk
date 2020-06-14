@@ -1,8 +1,3 @@
-<%-- 
-    Document   : pemesanan
-    Created on : Apr 16, 2020, 9:30:34 PM
-    Author     : ASUS
---%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="control.koneksi"%>
 <%@page import="model.barang,model.supplier,model.pemesanan"%>

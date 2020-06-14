@@ -64,11 +64,11 @@ a:active, a:hover { color: #008800; text-decoration: underline}
 #site_title {
     padding-top: 65px;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 38px;
     color: #FFFFFF;
 }
 #site_slogan {
-    padding-top: 14px;
+    padding-top: 13px;
     font-weight: bold;
     font-size: 13px;
     color: #AAFFFF;

@@ -1,8 +1,3 @@
-<%-- 
-    Document   : beranda
-    Created on : May 3, 2020, 5:01:12 PM
-    Author     : ASUS
---%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c"uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="sql"uri="http://java.sun.com/jsp/jstl/sql"%>
@@ -11,11 +6,13 @@
                    url="jdbc:mysql://localhost:3306/pembelian_atk"
                    user="root"password=""/>
 
+<!DOCTYPE html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Aplikasi Pembelian</title>
     <link href="config/design.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="config/setting.js"></script>
+    <link href="config/cssTable.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <!--
