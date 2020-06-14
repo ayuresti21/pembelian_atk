@@ -100,7 +100,7 @@ ResultSet qrybarang = null;
         </tr>
         <tr><td><input type="submit" value="TAMBAH" name="aksi1"></td></tr>          
         
-            <table width="535" border="1" align="center">
+            <table width="535" border="0" align="center">
                 <tr align="center">
                     <td colspan="5"><h3>Data Barang Untuk Diretur</h3></td>
                 </tr>
