@@ -71,28 +71,28 @@ out.println(e);
 </tr>
 <tr>
 <td>No Bukti Transaksi</td>
-<td>: <select name="nobeli" onchange="showEmp(this.value);">
-      <option value="-1">Pilih Nomor Pembelian</option>
-      <%
-      qrypembelian = kon.stmt.executeQuery("SELECT no_beli FROM pembelian where not exists"
-      + "(select * from jurnal where jurnal.no_beli=pembelian.no_beli)");
-      while (qrypembelian.next()) {
-      pembelian.setNobeli(qrypembelian.getString("no_beli"));
-      %>
-      <option value="<%=pembelian.getNobeli()%>"><%=pembelian.getNobeli()%></option>
+<td>: <select name="nobeli" onchange="showPesan(this.value);">
+                            <option value="-1">Pilih Nomor Pembelian</option>
+                            <%
+                            qrypembelian = kon.stmt.executeQuery("SELECT no_beli FROM pembelian where not exists"
+                            + "(select * from jurnal where jurnal.no_beli=pembelian.no_beli)");
+                            while (qrypembelian.next()) {
+                                pembelian.setNobeli(qrypembelian.getString("no_beli"));
+                            %>
+                            <option value="<%=pembelian.getNobeli()%>"><%=pembelian.getNobeli()%></option>
                             <% } %>
                     </select>
                     </td>
                     </tr>
-    <input type="hidden" name="bel_id" id="bel_id" value="">
+            <input type="hidden" name="emp_id" id="emp_id" value="${param.cari}">
 </tr>
 <tr>
 <td>Keterangan</td>
 <td>: <textarea name="keterangan"></textarea></td>
 </tr>
 <tr>
-<td>Nominal</td>   <td>: <input type="text" name="sub_beli" id="beli" value=""
-        readonly="readonly"></td>
+<td>Nominal</td>   <td>: <input type="text" name="sub" id="subtotal" value=""
+                        readonly="readonly" onkeyup="showPesan();"></td>
                     </tr>
 <br><br>
 <tr>

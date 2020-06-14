@@ -76,7 +76,7 @@ public String select (){
 }
 public String toDelete (){
     return "DELETE FROM sementara_retur "
-            + " WHERE no_retur='" + noretur + "'";
+            + " WHERE kode='" + kdbarang + "'";
 }
 public String toInsert (){
     return "INSERT INTO sementara_retur VALUES('"
