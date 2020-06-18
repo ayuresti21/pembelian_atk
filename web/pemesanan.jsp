@@ -19,14 +19,13 @@ ResultSet qrypemesanan = null;
 %>
 <html>
     <head>
-    <tittle>Transaksi Pemesanan</tittle>
+  <h1>Transaksi Pemesanan Barang</h1></br>
     </head>
     <body>
         <sql:query var="ttl" dataSource="${dataSource}">
             SELECT SUM(quantity) AS ttl_D,
             SUM(subtotal) AS ttl_K FROM sementara
         </sql:query>
-            <h1>Transaksi Pemesanan Barang</h1></br>
             <table border="0">
                 <form action="ServletPemesanan" method="post">
                     <h2>Data Barang</h2>

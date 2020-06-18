@@ -39,80 +39,80 @@ stok <= $P{pstok}]]>
 		</band>
 	</title>
 	<columnHeader>
-		<band height="50" splitType="Stretch">
+		<band height="24" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="0" width="200" height="49" uuid="d97127e8-60c6-4d7e-a967-f562da1b6f57"/>
+				<reportElement x="0" y="0" width="200" height="24" uuid="d97127e8-60c6-4d7e-a967-f562da1b6f57"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="18" isBold="true"/>
+					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Kode Barang]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="200" y="0" width="200" height="49" uuid="bb2e0503-d454-4435-ac96-720da34f88e6"/>
+				<reportElement x="200" y="0" width="200" height="24" uuid="bb2e0503-d454-4435-ac96-720da34f88e6"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="18" isBold="true"/>
+					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Nama Barang]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="400" y="0" width="200" height="49" uuid="477b2714-7f04-438d-9718-5047799a0cf7"/>
+				<reportElement x="400" y="0" width="200" height="24" uuid="477b2714-7f04-438d-9718-5047799a0cf7"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="18" isBold="true"/>
+					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Harga]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="600" y="0" width="200" height="49" uuid="454d539b-d487-4acc-8067-54f062a04386"/>
+				<reportElement x="600" y="0" width="200" height="24" uuid="454d539b-d487-4acc-8067-54f062a04386"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="18" isBold="true"/>
+					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Stok]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="29" splitType="Stretch">
+		<band height="19" splitType="Stretch">
 			<textField>
-				<reportElement x="400" y="0" width="200" height="29" uuid="ccfdb129-795c-477e-9edd-0d70fe5b534b"/>
+				<reportElement x="400" y="0" width="200" height="19" uuid="ccfdb129-795c-477e-9edd-0d70fe5b534b"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{barang_harga}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="600" y="0" width="200" height="29" uuid="3d7bda8d-9b52-4815-98b9-cdd8517c35fc"/>
+				<reportElement x="602" y="0" width="200" height="19" uuid="3d7bda8d-9b52-4815-98b9-cdd8517c35fc"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{barang_stok}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="0" width="200" height="29" uuid="548eb93a-748c-47cf-bcc1-100abe27678f"/>
+				<reportElement x="200" y="0" width="200" height="19" uuid="4454f1be-4fc4-4c8e-92ec-29828fdcde8a"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font size="14"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{barang_kd_brg}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="200" y="0" width="200" height="29" uuid="4454f1be-4fc4-4c8e-92ec-29828fdcde8a"/>
-				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{barang_nm_brg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="200" height="19" uuid="548eb93a-748c-47cf-bcc1-100abe27678f"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{barang_kd_brg}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
 	<summary>
-		<band height="42" splitType="Stretch">
+		<band height="30" splitType="Stretch">
 			<textField>
-				<reportElement x="187" y="0" width="71" height="42" uuid="9f1e5cd3-6a3b-4d0f-995b-936c07bd8452"/>
+				<reportElement x="187" y="0" width="71" height="29" uuid="9f1e5cd3-6a3b-4d0f-995b-936c07bd8452"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="14"/>
+					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{barang_kd_brg_1}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="0" width="187" height="42" uuid="7f4a84fc-8967-45e1-a2a1-c550d6899973"/>
+				<reportElement x="0" y="0" width="187" height="29" uuid="7f4a84fc-8967-45e1-a2a1-c550d6899973"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="14" isBold="true"/>
 				</textElement>

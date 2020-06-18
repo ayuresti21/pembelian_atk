@@ -69,6 +69,9 @@
                         <c:when test="${param.hal=='cetaklapbarang'}">
                             <%@include file="CetakLaporanBarang.jsp" %>
                         </c:when>
+                        <c:when test="${param.hal=='cetaklappembelian'}">
+                            <%@include file="CetakLaporanPembelian.jsp" %>
+                        </c:when>
                         <c:otherwise>
                             <%@include file="home.jsp" %>
                         </c:otherwise>
@@ -89,6 +92,7 @@
                 <li><a href="beranda.jsp?halaman=retur">Retur Pembelian</a></li>
                 <li><a href="beranda.jsp?halaman=jurnal">Jurnal Umum</a></li>
                 <li><a href="beranda.jsp?hal=cetaklapbarang">Laporan Barang</a></li>
+                <li><a href="beranda.jsp?hal=cetaklappembelian">Laporan Pembelian</a></li>
                </ul>
 
                 <div class="box" align="justify">
