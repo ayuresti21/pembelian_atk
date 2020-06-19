@@ -40,7 +40,7 @@ String nof = "FK" + no.substring(2);
         <title>Transaksi Pembelian</title>
     </head>
     <body>
-        <h1>Transaksi Pembelian Barang</h1></br>
+        <h1 align="center">Transaksi Pembelian Barang</h1></br>
         <table border="0">
             <form action="ServletPembelian" method="post">
                 <h2>Data Pembelian</h2>

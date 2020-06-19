@@ -186,7 +186,9 @@ month(tgl_beli)=$P{bln} and year(tgl_beli)=$P{thn}]]>
 				</rectangle>
 				<textField>
 					<reportElement x="483" y="20" width="161" height="20" uuid="c6e3f7bd-c1b9-4408-a06b-a152ba1becfb"/>
-					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
 					<textFieldExpression><![CDATA[$V{detail_beli_sub_1}]]></textFieldExpression>
 				</textField>
 				<staticText>

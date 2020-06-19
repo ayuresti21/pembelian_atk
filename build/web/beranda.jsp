@@ -9,10 +9,11 @@
 <!DOCTYPE html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Aplikasi Pembelian</title>
+    <title>Pembelian ATK Kura Tulis</title>
     <link href="config/design.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="config/setting.js"></script>
     <link href="config/cssTable.css" rel="stylesheet" type="text/css" />
+    
 </head>
 <body>
     <!--
@@ -27,7 +28,7 @@
             </div>
             <div id="header">
                 <div id="inner_header">
-                    <div id="site_title">Aplikasi Pembelian</div>
+                    <div id="site_title">PEMBELIAN ATK KURA TULIS</div>
                     <div id="site_slogan">
                         <marquee behavior="alternate">Program Studi Sistem Informasi Akuntansi</marquee>
                     </div>
@@ -69,8 +70,17 @@
                         <c:when test="${param.hal=='cetaklapbarang'}">
                             <%@include file="CetakLaporanBarang.jsp" %>
                         </c:when>
+                        <c:when test="${param.hal=='cetaklapsupplier'}">
+                            <%@include file="CetakLaporanSupplier.jsp" %>
+                        </c:when>
+                        <c:when test="${param.hal=='cetaklappemesanan'}">
+                            <%@include file="CetakLaporanPemesanan.jsp" %>
+                        </c:when>
                         <c:when test="${param.hal=='cetaklappembelian'}">
                             <%@include file="CetakLaporanPembelian.jsp" %>
+                        </c:when>
+                        <c:when test="${param.hal=='cetaklapretur'}">
+                            <%@include file="CetakLaporanRetur.jsp" %>
                         </c:when>
                         <c:otherwise>
                             <%@include file="home.jsp" %>
@@ -92,7 +102,10 @@
                 <li><a href="beranda.jsp?halaman=retur">Retur Pembelian</a></li>
                 <li><a href="beranda.jsp?halaman=jurnal">Jurnal Umum</a></li>
                 <li><a href="beranda.jsp?hal=cetaklapbarang">Laporan Barang</a></li>
+                <li><a href="beranda.jsp?hal=cetaklapsupplier">Laporan Supplier</a></li>
+                <li><a href="beranda.jsp?hal=cetaklappemesanan">Laporan Pemesanan</a></li>
                 <li><a href="beranda.jsp?hal=cetaklappembelian">Laporan Pembelian</a></li>
+                <li><a href="beranda.jsp?hal=cetaklapretur">Laporan Retur</a></li>
                </ul>
 
                 <div class="box" align="justify">

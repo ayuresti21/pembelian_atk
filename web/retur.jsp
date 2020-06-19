@@ -18,14 +18,14 @@ ResultSet qrybarang = null;
 %>
 <html>
     <head>
-    <tittle>Transaksi Retur</tittle>
+    <title>Transaksi Retur</title>
     </head>
     <body>
         <sql:query var="ttl" dataSource="${dataSource}">
             SELECT SUM(quantity) AS ttl_D,
             SUM(subtotal) AS ttl_K FROM sementara_retur
         </sql:query>
-                    <h2>Transaksi Retur</h2>
+                    <h1>Transaksi Retur</h1>
                     <table border="0">
                     <form action="ServletRetur" method="post" onsubmit="return validasi_inputRetur(this)">
                     <pre>

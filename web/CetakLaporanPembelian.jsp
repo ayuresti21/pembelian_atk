@@ -1,18 +1,13 @@
-<%-- 
-    Document   : CetakLaporanPembelian
-    Created on : Jun 18, 2020, 11:39:59 AM
-    Author     : ASUS
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+    
     </head>
     <body>
-        <h1>Tampilkan Laporan Pembelian Berdasarkan Bulan dan Tahun</h1>
+        <h1>Tampilkan Laporan Pembelian</h1> 
+            <h1>Berdasarkan Bulan dan Tahun</h1>
         <form action="TampilLapPembelian.jsp">
             Masukkan Bulan :
             <select name="bulan" id="bulan">
@@ -28,7 +23,7 @@
                 <option value="10">Oktober</option>
                 <option value="11">November</option>
                 <option value="12">Desember</option>
-            </select><br>
+            </select><br><br>
             <select name="tahun" id="tahun">
                 <option value="2019">2019</option>
                 <option value="2020">2020</option>
@@ -42,7 +37,7 @@
                 <option value="2028">2028</option>
                 <option value="2029">2029</option>
             </select>
-            <br>
+            <br><br>
             <input type="submit" value="TAMPIL">
         </form>
     </body>

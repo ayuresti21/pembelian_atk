@@ -1,8 +1,3 @@
-<%-- 
-    Document   : jurnal
-    Created on : May 9, 2020, 1:28:15 AM
-    Author     : ASUS
---%>
 <%@page import="java.sql.*"%>
 <%@page import="model.akun,model.pembelian,model.jurnal"%>
 <%@page import="control.koneksi" %>
@@ -26,14 +21,14 @@
 %>
 <html>
     <head>
-    <tittle>Transaksi Jurnal Umum</tittle>
+    <title>Transaksi Jurnal Umum</title>
     </head>
     <body>
         <sql:query var="ttl" dataSource="${dataSource}">
             SELECT SUM(debet) AS ttl_D,
             SUM(kredit) AS ttl_K FROM sementara_jurnal
         </sql:query>
-<h2>Transaksi Retur</h2>
+<h1>Transaksi Retur</h1>
 <table border="0">
 <form action="ServletJurnal" method="post" onsubmit="return validasi_inputJurnal(this)">
 <pre>
@@ -94,7 +89,6 @@ out.println(e);
 <td>Nominal</td>   <td>: <input type="text" name="sub" id="subtotal" value=""
                         readonly="readonly" onkeyup="showPesan();"></td>
                     </tr>
-<br><br>
 <tr>
 <table width="100" border="1" cellpadding="0" cellspacing="0">
 <tr class="head">

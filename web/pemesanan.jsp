@@ -19,7 +19,7 @@ ResultSet qrypemesanan = null;
 %>
 <html>
     <head>
-  <h1>Transaksi Pemesanan Barang</h1></br>
+  <h1 align="center">Transaksi Pemesanan Barang</h1></br>
     </head>
     <body>
         <sql:query var="ttl" dataSource="${dataSource}">
