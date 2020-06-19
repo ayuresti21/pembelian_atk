@@ -17,10 +17,6 @@
         <servlet-class>control.UserServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>AkunServlet</servlet-name>
-        <servlet-class>control.AkunServlet</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>ServletPemesanan</servlet-name>
         <servlet-class>control.ServletPemesanan</servlet-class>
     </servlet>
@@ -31,10 +27,6 @@
     <servlet>
         <servlet-name>ServletRetur</servlet-name>
         <servlet-class>control.ServletRetur</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ServletJurnal</servlet-name>
-        <servlet-class>control.ServletJurnal</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>pesan</servlet-name>
@@ -53,10 +45,6 @@
         <url-pattern>/UserServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>AkunServlet</servlet-name>
-        <url-pattern>/AkunServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>ServletPemesanan</servlet-name>
         <url-pattern>/ServletPemesanan</url-pattern>
     </servlet-mapping>
@@ -67,10 +55,6 @@
     <servlet-mapping>
         <servlet-name>ServletRetur</servlet-name>
         <url-pattern>/ServletRetur</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ServletJurnal</servlet-name>
-        <url-pattern>/ServletJurnal</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

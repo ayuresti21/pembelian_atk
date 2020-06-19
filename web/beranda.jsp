@@ -52,17 +52,11 @@
                         <c:when test="${param.halaman=='tampiluse'}">
                             <%@include file="user.jsp" %>
                         </c:when>
-                          <c:when test="${param.halaman=='tampilaku'}">
-                            <%@include file="akun.jsp" %>
-                        </c:when>
                          <c:when test="${param.halaman=='pesan'}">
                             <%@include file="pemesanan.jsp" %>
                         </c:when>
                         <c:when test="${param.halaman=='beli'}">
                             <%@include file="pembelian.jsp" %>
-                        </c:when>
-                        <c:when test="${param.halaman=='jurnal'}">
-                            <%@include file="jurnal.jsp" %>
                         </c:when>
                         <c:when test="${param.halaman=='retur'}">
                             <%@include file="retur.jsp" %>
@@ -96,11 +90,9 @@
                 <li><a href="beranda.jsp?halaman=tampilbrg&aksi=SIMPAN">Data Barang</a></li>
                 <li><a href="beranda.jsp?halaman=tampilsup&aksi=SIMPAN">Data Supplier</a></li>
                 <li><a href="beranda.jsp?halaman=tampiluse&aksi=SIMPAN">Data User</a></li>
-                <li><a href="beranda.jsp?halaman=tampilaku&aksi=SIMPAN">Data Akun</a></li>
                 <li><a href="beranda.jsp?halaman=pesan">Pemesanan</a></li>
                 <li><a href="beranda.jsp?halaman=beli">Pembelian</a></li>
                 <li><a href="beranda.jsp?halaman=retur">Retur Pembelian</a></li>
-                <li><a href="beranda.jsp?halaman=jurnal">Jurnal Umum</a></li>
                 <li><a href="beranda.jsp?hal=cetaklapbarang">Laporan Barang</a></li>
                 <li><a href="beranda.jsp?hal=cetaklapsupplier">Laporan Supplier</a></li>
                 <li><a href="beranda.jsp?hal=cetaklappemesanan">Laporan Pemesanan</a></li>
