@@ -1,157 +1,200 @@
-/*
-CSS Credit: http://www.templatemo.com/
-*/
-body {
-    margin:0;
-    padding:0;
-    line-height: 1.5em;
-    font-family: "Verdana", Trebuchet MS, Helvetica, Arial;
-    font-size: 12px;
-    color: #000000;
-    background: #999999 url(../images/templatemo_bg.gif);
+body {margin:0;font-family:Arial
 }
-a:link, a:visited { color: #0066CC; text-decoration: none} 
-a:active, a:hover { color: #008800; text-decoration: underline}
 
-#container_wrapper {
-    background: url(../images/templatemo_side_bg.gif) repeat-x;
+.topnav {
+    overflow: hidden;
+    background-color: #333;
 }
-#container {
-    width: 810px;
-    margin: 0px auto;
-    background: url(../images/templatemo_content_bg.gif);
-}
-#top {
-    clear: left;
-    height: 25px;	/* 'padding-top' + 'height' must be equal to the 'background image height' */
-    padding-top: 42px;
-    padding-left: 30px;
-    background: url(../images/templatemo_top_bg.gif) no-repeat bottom;
-}
-#header {
-    clear: left;
-    height: 179px;
-    text-align: center;
-    background: url(../images/templatemo_header_bg.gif) no-repeat;
-}
-#inner_header {
-    height: 160px;
-    background: url(../images/templatemo_header.jpg) no-repeat center center;
-}
-#left_column {
-    clear: left;
+
+.topnav a {
     float: left;
-    width: 540px;
-    padding-left: 20px;
-}
-#right_column {
-    float: right;
-    width: 216px;
-    padding-right: 15px;
-}
-#footer {
-    clear: both;
-    padding-top: 18px;
-    height: 37px;
+    display: block;
+    color: #f2f2f2;
     text-align: center;
-    font-size: 11px;
-    background: url(../images/templatemo_footer_bg.gif) no-repeat;
-    color: #666666;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
-#footer a {
-    color: #666666;
+
+.active {
+    background-color: #4CAF50;
+    color: white;
 }
-#site_title {
-    padding-top: 65px;
-    font-weight: bold;
-    font-size: 38px;
-    color: #FFFFFF;
+
+.topnav .icon {
+    display: none;
 }
-#site_slogan {
-    padding-top: 13px;
-    font-weight: bold;
-    font-size: 13px;
-    color: #AAFFFF;
-}
-.spacer {
-    clear: left;
-    height: 18px;
-}
-.pic {
+
+.dropdown {
     float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #000000;
+    overflow: hidden;
 }
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 21px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+.post_title {
+    margin: auto;
+    width: 60%;
+    align: center;
+    text: bold;
+}
+.text_area {
+    margin: auto;
+    width: 60%;
+    text-align: justify;
+}
+
+.text {
+    height: 1100px;
+    width: 68%;
+    margin-left: 280px; 
+}
+
 .box {
     margin: 10px;
     padding: 10px;
     border: 1px dashed #CCCCCC;
-    background: #F2F2F2;
-}
-.box2 {
-    clear: left;
-    margin-top: 10px;
-    background: #F6F6F6;
-    color: #000000;
-}
-.text_area {
-    padding: 0 5px 10px 5px;
-    font-size: 13px;
-}
-.publish_date {
-    clear: both;	
-    margin-bottom: 10px;
-    color: #999999;
-    font-size: 11px;
-    font-weight: bold;
-}
-.title {
-    padding-bottom: 12px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #0066CC;
+    background: #F2F2F2
 }
 .subtitle {
-    padding-bottom: 6px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #666666;
+    text-align: center;
+    font-style: bold;
+    font-family: Arial;
 }
-.post_title {
-    padding: 6px;
-    padding-left: 10px;
-    background: #DDEEFF;
+.footer {
+    font-family: Arial;
     font-size: 14px;
-    font-weight: bold;
-    color: #0066CC;
-}
-.menu {
-    list-style-type: none;
     margin: 10px;
-    margin-top: 0px;
-    padding: 0px;
-    width: 195px;
+    padding: 10px;
+    padding-left: 40px;
+    text-align: left;
+    border: 1px dashed #CCCCCC;
+    background: blanchedalmond;
 }
-.menu li a{
-    background: #F4F4F4 url(../images/button_default.gif) no-repeat;
-    font-size: 13px;
-    font-weight: bold;
-    color: #0066CC;
-    display: block;
-    width: auto;
-    margin-bottom: 2px;
-    padding: 5px;
-    padding-left: 12px;
-    text-decoration: none;
-}
-* html .menu li a{ 
-    width: 190px;
-}
-.menu li a:visited, .menu li a:active{
-    color: #0066CC;
-}
-.menu li a:hover{
-    background: #EEEEEE url(../images/button_active.gif) no-repeat;
-    color: #FF3333;
+
+#right {
+    font-size: 14px;
+    text-align: right;
+    padding-right: 20px;
 }

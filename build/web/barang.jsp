@@ -27,7 +27,7 @@
             value="${param.stok}"/></td>  
         </tr>
         <tr>
-            <td><input type="submit" value="Simpan" class="button"/></td> <td> </td>
+            <td><input type="submit" value="Simpan" class="button"/></td> 
         </tr>
     </form>
 </td></tr></table><br>
