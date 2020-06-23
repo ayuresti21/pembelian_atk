@@ -24,7 +24,7 @@
 
     <div class="topnav" id="myTopnav">
         <a href="beranda.jsp">Home</a>
-        <a href="#kontak">Contact</a>
+        <a href="contact.jsp">Contact</a>
         <a href="home.jsp">About</a>
         <div class="dropdown">
             <button class="dropbtn">Settings
@@ -32,7 +32,7 @@
             </button>
             <div class="dropdown-content">
                 <a href="beranda.jsp?halaman=dataPeg">Change Password</a>
-                <a href="beranda.jsp?halaman=logout">Logout</a>
+                <a href="index.jsp?halaman=logout">Logout</a>
             </div>
         </div> 
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>

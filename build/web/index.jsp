@@ -9,9 +9,31 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Halaman Login</title>
+        <link rel="stylesheet" type="text/css" href="config/login.css"/>
     </head>
     <body>
-        <h1><a href="beranda.jsp">Ke Beranda</a></h1>
+        <h2><center>Login Form Kura Tulis</center></h2>
+<form action="Login?proses=login" method="post">
+  <div class="imgcontainer">
+    <img src="images/photo.jpg" alt="Avatar" class="avatar">
+  </div>
+  <div class="container">
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+        
+    <button type="submit" value="Login">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn" value="reset">Cancel</button>
+  </div>
+</form>
+
     </body>
 </html>
