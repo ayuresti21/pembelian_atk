@@ -14,8 +14,8 @@
     <script type="text/javascript" src="config/setting.js"></script>
     <script type="text/javascript" src="config/cssjs.js"></script>
     <link href="config/cssTable.css" rel="stylesheet" type="text/css" />
-</head>
 
+</head>
 <body>
     <div class="header">
         <h1>Pembelian ATK</h1>

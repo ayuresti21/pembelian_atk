@@ -1,5 +1,4 @@
-
-    <div class="post_title">
+   <div class="post_title">
         <h1>HOME WEBSITE TOKO KURA TULIS</h1>
     </div>
     <div class="text_area">

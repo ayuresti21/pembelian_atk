@@ -11,7 +11,7 @@
 </div>
 <link href="config/contact.css" rel="stylesheet" type="text/css" />
 
-<h2 style="text-align:center">Our Team</h2>
+<h2 style="text-align: center">Our Team</h2>
 <div class="row">
   <div class="column">
     <div class="card">
@@ -67,7 +67,7 @@
     
     <div class="column">
     <div class="card">
-      <img src="images/photo.jpg" alt="John" style="width:60%">
+        <img src="images/photo.jpg" alt="John" style="width:60%">
       <div class="container">
         <h2>Ayu Resti Maharani</h2>
         <p class="title">Kelompok 1</p>

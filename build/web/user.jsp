@@ -41,7 +41,7 @@
     </sql:query>
     <br><table border="1" width="100%" cellpadding="0" cellspacing="0">
         <tr class="head">
-            <td>Id User</td><td>Nama User</td><td>Hak Akses</td><td>Password</td><td>Action</td>
+            <td>Id</td><td>Id User</td><td>Nama User</td><td>Hak Akses</td><td>Password</td><td>Action</td>
         </tr>
         <c:forEach var="rowuser" items="${queryuser.rowsByIndex}">
             <tr class="isi">
@@ -49,9 +49,10 @@
                 <td valign='top'>${rowuser[1]}</td>
                 <td valign='top'>${rowuser[2]}</td>
                 <td valign='top'>${rowuser[3]}</td>
+                <td valign='top'>${rowuser[4]}</td>
                 <td valign='top'><a href='UserServlet?aksi=HAPUS&id=${rowuser[0]}'> Hapus</a> |
-                    <a href='beranda.jsp?halaman=tampiluse&aksi=GANTI&id_user=${rowuser[0]}
-                    &nm_user=${rowuser[1]}&hak_akses=${rowuser[2]}&pass=${rowuser[3]}'> Edit </a>
+                    <a href='beranda.jsp?halaman=tampiluse&aksi=GANTI&id=${rowuser[0]}&id_user=${rowuser[0]}
+                    &nm_user=${rowuser[2]}&hak_akses=${rowuser[3]}&pass=${rowuser[4]}'> Edit </a>
                 </td>
             </tr>
         </c:forEach>
