@@ -48,7 +48,7 @@
         <a href="beranda.jsp?halaman=beli">Pembelian</a>
         <a href="beranda.jsp?halaman=retur">Retur Pembelian</a>
         <a href="beranda.jsp?hal=cetaklapbarang">Laporan Barang</a>
-        <a href="beranda.jsp?hal=cetaklapsupplier">Laporan Supplier</a>
+        <a href="TampilLapSupplier.jsp" target="_blank">Laporan Supplier</a>
         <a href="beranda.jsp?hal=cetaklappemesanan">Laporan Pemesanan</a>
         <a href="beranda.jsp?hal=cetaklappembelian">Laporan Pembelian</a>
         <a href="beranda.jsp?hal=cetaklapretur">Laporan Retur</a>
@@ -78,8 +78,8 @@
             <c:when test="${param.hal=='cetaklapbarang'}">
                 <%@include file="CetakLaporanBarang.jsp" %>
             </c:when>
-            <c:when test="${param.hal=='cetaklapsupplier'}">
-                <%@include file="CetakLaporanSupplier.jsp" %>
+            <c:when test="${param.hal=='TampilLapSupplier'}">
+                <%@include file="TampilLapSupplier.jsp" %>
             </c:when>
             <c:when test="${param.hal=='cetaklappemesanan'}">
                 <%@include file="CetakLaporanPemesanan.jsp" %>
