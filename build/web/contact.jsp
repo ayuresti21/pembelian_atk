@@ -3,13 +3,32 @@
     Created on : Jun 23, 2020, 11:30:55 AM
     Author     : ASUS
 --%>
+<link href="config/contact.css" rel="stylesheet" type="text/css" />
+<link href="config/design.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="config/cssjs.js"></script>
 
+ 
 <div class="about-section">
   <h1>Contact Us Page</h1>
   <p>We are Kura Tulis ATK</p>
   <p>Sistem Informasi Akuntansi</p>
 </div>
-<link href="config/contact.css" rel="stylesheet" type="text/css" />
+
+<div class="topnav" id="myTopnav">
+        <a href="beranda.jsp">Home</a>
+        <a href="contact.jsp">Contact</a>
+        <a href="home.jsp">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Settings
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="beranda.jsp?halaman=dataPeg">Change Password</a>
+                <a href="index.jsp?halaman=logout">Logout</a>
+            </div>
+        </div> 
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
 
 <h2 style="text-align: center">Our Team</h2>
 <div class="row">
